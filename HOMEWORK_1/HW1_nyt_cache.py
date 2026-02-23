@@ -20,7 +20,8 @@ from dotenv import load_dotenv
 HW1_DIR = Path(__file__).resolve().parent
 CACHE_PATH = HW1_DIR / "nyt_2025_shootings_cache.json"
 REPO_ROOT = HW1_DIR.parent
-GVA_PATH = REPO_ROOT / "01_query_api" / "gva_mass_shootings-2026-02-08.csv"
+# GVA CSV in HOMEWORK_1 (same directory as this script)
+GVA_PATH = HW1_DIR / "gva_mass_shootings-2026-02-08.csv"
 ENV_PATH = REPO_ROOT / ".env"
 
 # Check for existing env var (would override .env)

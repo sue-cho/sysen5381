@@ -11,9 +11,9 @@ import pandas as pd
 
 from HW1_nyt_cache import load_or_build_2025_cache
 
-# GVA CSV path (project 01_query_api)
-REPO_ROOT = Path(__file__).resolve().parent.parent
-GVA_PATH = REPO_ROOT / "01_query_api" / "gva_mass_shootings-2026-02-08.csv"
+# GVA CSV path (same directory as this script: HOMEWORK_1)
+HW1_DIR = Path(__file__).resolve().parent
+GVA_PATH = HW1_DIR / "gva_mass_shootings-2026-02-08.csv"
 
 KEYWORDS = ["shooting", "attack", "killed", "mass", "gunman", "victims"]
 

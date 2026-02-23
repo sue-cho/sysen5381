@@ -110,8 +110,8 @@ def sidebar():
     default_a = states[0] if states else None
     default_b = (states[1] if len(states) > 1 else states[0]) if states else None
     return ui.sidebar(
-        ui.h5("Shooting coverage by state", class_="mt-3"),
-        ui.p("NYT articles analysis: compare how two states’ mass shootings were covered in the New York Times.", class_="small text-muted"),
+        ui.h5("Compare states", class_="mt-3"),
+        ui.p("Compare how the New York Times covered mass shootings in two states.", class_="small text-muted"),
         ui.hr(),
         ui.input_select("state_a", "State A", choices=choices, selected=default_a),
         ui.input_select("state_b", "State B", choices=choices, selected=default_b),
@@ -137,22 +137,19 @@ app_ui = ui.page_sidebar(
     ui.layout_columns(
         ui.value_box(
             "NYT Articles Analysis",
-            "Shooting coverage by state — understand how mass shootings were covered in the New York Times",
+            "Compare how the Times covered mass shootings in two states.",
             theme="primary",
             class_="col-12",
         ),
         ui.card(
-            ui.card_header(
-                ui.h4("Shooting coverage by state (NYT articles)", class_="mb-0"),
-                class_="bg-primary text-white",
-            ),
+            ui.output_ui("main_card_header"),
             main_content(),
             class_="col-12",
         ),
         col_widths=[12],
         row_heights="auto",
     ),
-    title="NYT Articles: Shooting Coverage by State",
+    title="NYT Articles: State Comparison",
     fillable=True,
 )
 
@@ -189,6 +186,21 @@ def server(input: Inputs, output: Outputs, session: Session):
         if arts is None:
             return ui.div("Loading NYT articles cache...", class_="alert alert-info mt-3")
         return ui.div(f"NYT articles cache ready: {len(arts)} articles.", class_="alert alert-success mt-3")
+
+    @output
+    @render.ui
+    def main_card_header():
+        """Show 'Top 10 Statistics' when in Top 10 view, otherwise 'Compare two states'."""
+        if top10_result.get() is not None:
+            return ui.card_header(
+                ui.h4("Top 10 Statistics", class_="mb-0"),
+                ui.p("Nationwide rankings — not a two-state comparison.", class_="mb-0 opacity-75", style="font-size: 0.95rem;"),
+                class_="bg-primary text-white",
+            )
+        return ui.card_header(
+            ui.h4("Compare two states", class_="mb-0"),
+            class_="bg-primary text-white",
+        )
 
     @reactive.effect
     @reactive.event(input.run_analysis, ignore_none=False)
@@ -283,7 +295,7 @@ def server(input: Inputs, output: Outputs, session: Session):
         if r is None:
             return ui.div(
                 ui.h5("Ready to analyze", class_="mt-3"),
-                ui.p('Select two states and click "Run NYT coverage analysis" to see shooting coverage by state from NYT articles.', class_="text-muted"),
+                ui.p('Select two states and click "Run NYT coverage analysis" to compare results.', class_="text-muted"),
             )
         if r.get("error"):
             return None
@@ -335,7 +347,7 @@ def server(input: Inputs, output: Outputs, session: Session):
                 style="gap: 1rem;",
             ),
             ui.card(
-                ui.card_header(ui.h5("Coverage comparison (NYT articles)", class_="mb-0")),
+                ui.card_header(ui.h5("Coverage comparison", class_="mb-0")),
                 ui.card_body(
                     ui.output_table("comparison_table"),
                     class_="p-3",
@@ -410,16 +422,17 @@ def server(input: Inputs, output: Outputs, session: Session):
         if r.get("error"):
             return ui.div(
                 ui.h5("Top 10 Statistics", class_="mt-4 mb-2"),
+                ui.p("Nationwide rankings (not a two-state comparison).", class_="small text-muted mb-2"),
                 ui.div(r["error"], class_="alert alert-warning"),
             )
         cache_start = r.get("cache_start_date", "")
         cache_end = r.get("cache_end_date", "")
         date_note = f" (shootings in cache date range {cache_start}–{cache_end})" if cache_start and cache_end else ""
         return ui.TagList(
-            ui.h5("Top 10 Statistics", class_="mt-4 mb-2"),
-            ui.p(f"Based on cached NYT articles and GVA data.{date_note}", class_="small text-muted mb-3"),
+            ui.h5("Top 10 Statistics — Nationwide rankings", class_="mt-4 mb-2"),
+            ui.p("Rankings across all states (not a two-state comparison). Based on cached NYT articles and GVA data." + date_note, class_="small text-muted mb-3"),
             ui.card(
-                ui.card_header(ui.h6("Top 10 states by most shootings", class_="mb-0")),
+                ui.card_header(ui.h6("Top 10: States with most mass shootings", class_="mb-0")),
                 ui.card_body(
                     ui.div(ui.output_table("top10_shootings_table"), class_="table-responsive"),
                     class_="p-4",
@@ -427,7 +440,7 @@ def server(input: Inputs, output: Outputs, session: Session):
                 class_="mb-4",
             ),
             ui.card(
-                ui.card_header(ui.h6("Top 10 states by highest % coverage", class_="mb-0")),
+                ui.card_header(ui.h6("Top 10: States with highest NYT coverage %", class_="mb-0")),
                 ui.card_body(
                     ui.div(ui.output_table("top10_coverage_table"), class_="table-responsive"),
                     class_="p-4",
