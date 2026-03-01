@@ -4,3 +4,6 @@ shinywidgets
 plotly
 pandas
 ridgeplot
+python-docx
+requests
+python-dotenv
