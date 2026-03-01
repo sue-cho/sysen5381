@@ -20,6 +20,11 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Generate manifest for Connect
+        run: |
+          pip install rsconnect-python
+          cd HOMEWORK_1 && rsconnect write-manifest shiny . --entrypoint HW1_app:app
+
       - name: Publish to Posit Connect
         uses: rstudio/actions/connect-publish@main
         with:
@@ -28,3 +33,4 @@ jobs:
           access-type: acl
           dir: HOMEWORK_1
           force: false
+          show-logs: true
