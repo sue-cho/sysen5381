@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "python-shiny",
+    "entrypoint": "HW1_app:app"
+  },
+  "python": {
+    "version": "3.11.13",
+    "package_manager": {
+      "name": "pip",
+      "version": "25.3",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "requirements.txt": {"checksum": "26a1e384b54cb0c74b111ab003a41974"},
+    "README.md": {"checksum": "86cf8fa1a7330c75759201c506d36d33"},
+    "HW1_app.py": {"checksum": "4f8b507a80fc66b650201fd4a3d0d877"},
+    "HW1_data_reporter.py": {"checksum": "b15ae87115d471ea943b2081174ab71c"},
+    "HW1_state_analysis.py": {"checksum": "ee97b57572d903e7124b42c04e550f20"},
+    "HW1_nyt_cache.py": {"checksum": "a70f7ab3dd165179b946c6c11b81f94b"},
+    "HW1_api_query.py": {"checksum": "145cd1fc02909569fde4a8b3f3b3995e"},
+    "gva_mass_shootings-2026-02-08.csv": {"checksum": "1f31d17fb60e3a4c91b1b98a18598703"},
+    "nyt_2025_shootings_cache.json": {"checksum": "6aa670a3bdae2fa22a91197964a8b6de"}
+  }
+}
