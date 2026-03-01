@@ -7,3 +7,4 @@ ridgeplot
 python-docx
 requests
 python-dotenv
+jinja2
