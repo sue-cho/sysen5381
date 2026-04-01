@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sqlite3
 from datetime import date, datetime
 from pathlib import Path
@@ -16,14 +17,10 @@ VEC_DIM = 384
 EVENT_KEYWORDS = (
     "attack",
     "shooting",
-    "bourbon",
-    "french quarter",
     "terror",
     "killed",
     "gunman",
     "vehicle",
-    "truck",
-    "crowd",
     "mass shooting",
 )
 
@@ -338,17 +335,113 @@ def _rag_url_key(url: Optional[str]) -> str:
     return (url or "").strip()
 
 
+# Full names for associating RAG hits with a state when min_score filters everything out.
+_ABBR_TO_FULL_NAME: Dict[str, str] = {
+    "AL": "Alabama",
+    "AK": "Alaska",
+    "AZ": "Arizona",
+    "AR": "Arkansas",
+    "CA": "California",
+    "CO": "Colorado",
+    "CT": "Connecticut",
+    "DE": "Delaware",
+    "FL": "Florida",
+    "GA": "Georgia",
+    "HI": "Hawaii",
+    "ID": "Idaho",
+    "IL": "Illinois",
+    "IN": "Indiana",
+    "IA": "Iowa",
+    "KS": "Kansas",
+    "KY": "Kentucky",
+    "LA": "Louisiana",
+    "ME": "Maine",
+    "MD": "Maryland",
+    "MA": "Massachusetts",
+    "MI": "Michigan",
+    "MN": "Minnesota",
+    "MS": "Mississippi",
+    "MO": "Missouri",
+    "MT": "Montana",
+    "NE": "Nebraska",
+    "NV": "Nevada",
+    "NH": "New Hampshire",
+    "NJ": "New Jersey",
+    "NM": "New Mexico",
+    "NY": "New York",
+    "NC": "North Carolina",
+    "ND": "North Dakota",
+    "OH": "Ohio",
+    "OK": "Oklahoma",
+    "OR": "Oregon",
+    "PA": "Pennsylvania",
+    "RI": "Rhode Island",
+    "SC": "South Carolina",
+    "SD": "South Dakota",
+    "TN": "Tennessee",
+    "TX": "Texas",
+    "UT": "Utah",
+    "VT": "Vermont",
+    "VA": "Virginia",
+    "WA": "Washington",
+    "WV": "West Virginia",
+    "WI": "Wisconsin",
+    "WY": "Wyoming",
+}
+
+
+def _hit_mentions_state(hit: Dict[str, Any], state_abbr: str) -> bool:
+    abbr = state_abbr.strip().upper()
+    blob = f"{hit.get('headline', '')} {hit.get('text', '')}"
+    blob_l = blob.lower()
+    full = _ABBR_TO_FULL_NAME.get(abbr, "")
+    if full and full.lower() in blob_l:
+        return True
+    if len(abbr) == 2 and re.search(rf"\b{re.escape(abbr)}\b", blob, flags=re.IGNORECASE):
+        return True
+    return False
+
+
+def _pick_highest_per_state_fallback(
+    hits: List[Dict[str, Any]],
+    state_codes: List[str],
+) -> List[Dict[str, Any]]:
+    """
+    For each state (in order), take the highest-scoring hit that mentions that state.
+    If none mention the state, take the highest-scoring unused hit so each state still gets one chunk.
+    """
+    out: List[Dict[str, Any]] = []
+    used: Set[str] = set()
+    for code in state_codes:
+        abbr = str(code).strip().upper()
+        if not abbr:
+            continue
+        pool = [h for h in hits if _rag_url_key(h.get("web_url")) not in used]
+        if not pool:
+            break
+        mentioning = [h for h in pool if _hit_mentions_state(h, abbr)]
+        pick_from = mentioning if mentioning else pool
+        best = max(pick_from, key=lambda h: float(h.get("score") or 0.0))
+        out.append(best)
+        used.add(_rag_url_key(best.get("web_url")))
+    out.sort(key=lambda h: -float(h.get("score") or 0.0))
+    return out
+
+
 def retrieve_context(
     conn: sqlite3.Connection,
     query: str,
     top_k: int = 8,
     min_score: Optional[float] = None,
     allowed_urls: Optional[Collection[str]] = None,
+    per_state_fallback_codes: Optional[List[str]] = None,
 ) -> str:
     """
     allowed_urls: When set, only indexed articles whose web_url is in this set are eligible
     (use Agent 1 relevant=true URLs). Results are ranked by embedding similarity to `query`.
     When None, no URL filter (e.g. standalone RAG smoke test).
+    per_state_fallback_codes: When min_score drops all hits, optionally pick the highest-similarity
+    hit per listed state (still from the allow-list) instead of returning empty context.
     """
     n_articles = article_count(conn)
     use_allow = allowed_urls is not None
@@ -380,16 +473,31 @@ def retrieve_context(
             return ""
 
     if min_score is not None:
-        best = max(float(h.get("score") or 0.0) for h in hits)
-        filtered = [h for h in hits if float(h.get("score") or 0.0) >= float(min_score)]
+        hits_after_allow = list(hits)
+        best = max(float(h.get("score") or 0.0) for h in hits_after_allow)
+        filtered = [h for h in hits_after_allow if float(h.get("score") or 0.0) >= float(min_score)]
         if not filtered:
             print(
-                f"[RAG] min_score={min_score} dropped all {len(hits)} hit(s); "
+                f"[RAG] min_score={min_score} dropped all {len(hits_after_allow)} hit(s); "
                 f"best similarity was {best:.3f} (lower threshold or None to include chunks).",
                 flush=True,
             )
-            return ""
-        hits = filtered
+            codes = [c.strip().upper() for c in (per_state_fallback_codes or []) if str(c).strip()]
+            if codes and hits_after_allow:
+                picked = _pick_highest_per_state_fallback(hits_after_allow, codes)
+                if picked:
+                    print(
+                        f"[RAG] Per-state fallback: using {len(picked)} chunk(s) below min_score "
+                        f"(highest match per state where possible).",
+                        flush=True,
+                    )
+                    hits = picked
+                else:
+                    return ""
+            else:
+                return ""
+        else:
+            hits = filtered
 
     hits = hits[:top_k]
     blocks: List[str] = []

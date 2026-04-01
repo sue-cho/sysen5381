@@ -4,6 +4,7 @@
 
 from collections import defaultdict
 import base64
+import json
 from pathlib import Path
 import sys
 import traceback
@@ -1027,6 +1028,12 @@ def server(input: Inputs, output: Outputs, session: Session):
             if e.get("state") in [abbr_a, abbr_b]
         ]
         validated_articles = _synthetic_validated_from_gva_events(selected_events)
+        agent1_for_log = [
+            {"url": v.get("url"), "relevant": v.get("relevant"), "reason": v.get("reason")}
+            for v in validated_articles
+        ]
+        print("\n=== AGENT 1 OUTPUT (synthetic — pipeline input) ===", flush=True)
+        print(json.dumps(agent1_for_log, indent=2), flush=True)
 
         report_progress_rv.set(
             {

@@ -12,7 +12,8 @@ Install:
 
 Run:
   export OPENAI_API_KEY='your-key-here'
-  python HW2_multi_agent.py
+  python HW2_multi_agent.py                    # hardcoded test data + LLM Agent 1
+  python HW2_multi_agent.py --real-cache         # OH/LA default; same pipeline inputs as HW2_app.py Report tab
 """
 
 from __future__ import annotations
@@ -564,6 +565,57 @@ def build_gva_events_for_states(
     return _build_gva_events_and_candidates(sel, max_articles=max_articles)
 
 
+def _synthetic_validated_from_gva_events(events: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Same as HW2_app: Agent 2 keys coverage off Agent-1-shaped rows derived from GVA events
+    that already have matched NYT URLs (no LLM Agent 1).
+    """
+    out: List[Dict[str, Any]] = []
+    for ev in events:
+        urls = ev.get("matched_article_urls") or []
+        if not isinstance(urls, list) or not urls:
+            continue
+        u0 = str(urls[0]).strip()
+        if not u0:
+            continue
+        out.append(
+            {
+                "relevant": True,
+                "url": u0,
+                "reason": "GVA/NYT cache match",
+                "event": {
+                    "city": ev.get("city"),
+                    "state": str(ev.get("state", "")).strip().upper(),
+                    "date": ev.get("date"),
+                },
+            }
+        )
+    return out
+
+
+def _load_rag_conn_like_app() -> Any:
+    """
+    Same RAG index as HW2_app startup: full-state NYT cache embedding DB under HOMEWORK_2/data.
+    Returns sqlite3.Connection or None on failure.
+    """
+    try:
+        from rag_setup import setup_rag
+
+        repo_root = Path(HOMEWORK_2_DIR).resolve().parent
+        cache_path = repo_root / "HOMEWORK_1" / "nyt_2025_shootings_cache.json"
+        data_dir = Path(HOMEWORK_2_DIR) / "data"
+        return setup_rag(
+            cache_path=cache_path,
+            states=list(STATE_NAME_TO_ABBR.values()),
+            state_name_to_abbr=STATE_NAME_TO_ABBR,
+            data_dir=data_dir,
+            rebuild=False,
+        )
+    except Exception as exc:
+        print(f"[CLI] RAG load skipped (optional): {exc}", flush=True)
+        return None
+
+
 # 4. AGENT 1 - PARALLEL VALIDATION
 def agent1_validate_articles_parallel(
     articles: List[Dict[str, Any]],
@@ -989,6 +1041,7 @@ def run_agent_pipeline(
             top_k=5,
             min_score=RAG_MIN_SIMILARITY,
             allowed_urls=agent1_relevant_urls(validated_articles),
+            per_state_fallback_codes=[state_a, state_b],
         )
         if rag_conn is not None
         else ""
@@ -1078,7 +1131,7 @@ def main() -> None:
         "--max-articles",
         type=int,
         default=120,
-        help="Max candidate articles to send through Agent 1 in real-cache mode",
+        help="Used only in non-real-cache flows; real-cache uses HW2_app parity (synthetic Agent 1, max_articles=0).",
     )
     args = parser.parse_args()
     state_a = args.state_a.strip().upper()
@@ -1095,38 +1148,50 @@ def main() -> None:
         )
         sys.exit(1)
 
+    rag_conn = None
     if args.real_cache:
-        print("\n=== DATA MODE: REAL CACHE ===", flush=True)
-        all_events_local, test_articles_local = build_real_cache_inputs(
-            state_a=state_a, state_b=state_b, max_articles=args.max_articles
-        )
+        # Match HW2_app.handle_generate_report: same GVA event list + synthetic "Agent 1" + full-state RAG.
+        print("\n=== DATA MODE: REAL CACHE (HW2_app parity) ===", flush=True)
+        all_events_local, _ = build_gva_events_for_states([state_a, state_b], max_articles=0)
         print(
-            f"Loaded {len(all_events_local)} events and {len(test_articles_local)} candidate articles for Agent 1.",
+            f"Loaded {len(all_events_local)} GVA events for {state_a} and {state_b} "
+            f"(max_articles=0; same scope as HW2_app filter on hw2_events_all).",
             flush=True,
         )
+        if args.max_articles != 120:
+            print(
+                f"Note: --max-articles={args.max_articles} is ignored in real-cache mode "
+                f"(app uses synthetic validation, not LLM Agent 1 on candidates).",
+                flush=True,
+            )
+        validated_articles = _synthetic_validated_from_gva_events(all_events_local)
+        rag_conn = _load_rag_conn_like_app()
+        print(
+            "\n=== AGENT 1 SKIPPED (synthetic validation from GVA/NYT cache matches, same as HW2_app.py) ===",
+            flush=True,
+        )
+        print(f"Synthetic validated rows (one URL per covered event): {len(validated_articles)}", flush=True)
     else:
         print("\n=== DATA MODE: HARDCODED TEST ===", flush=True)
         test_articles_local = test_articles
         all_events_local = all_events
-
-    # Agent 1 parallel relevance validation
-    print("\n=== AGENT 1 OUTPUT (parallel relevance validation via OpenAI) ===")
-    validated_articles, elapsed = agent1_validate_articles_parallel(
-        test_articles_local, total_tokens_used=total_tokens_used
-    )
-    # Print only the exact Agent 1 output schema.
-    validated_articles_for_print = [
-        {"url": v.get("url"), "relevant": v.get("relevant"), "reason": v.get("reason")} for v in validated_articles
-    ]
-    print("Validated articles (url/relevant/reason):")
-    print(json.dumps(validated_articles_for_print, indent=2))
-    print(f"Agent 1 timing: {elapsed:.2f}s")
+        print("\n=== AGENT 1 OUTPUT (parallel relevance validation via OpenAI) ===")
+        validated_articles, elapsed = agent1_validate_articles_parallel(
+            test_articles_local, total_tokens_used=total_tokens_used
+        )
+        validated_articles_for_print = [
+            {"url": v.get("url"), "relevant": v.get("relevant"), "reason": v.get("reason")} for v in validated_articles
+        ]
+        print("Validated articles (url/relevant/reason):")
+        print(json.dumps(validated_articles_for_print, indent=2))
+        print(f"Agent 1 timing: {elapsed:.2f}s")
 
     pipeline_out = run_agent_pipeline(
         validated_articles=validated_articles,
         all_events=all_events_local,
         state_a=state_a,
         state_b=state_b,
+        rag_conn=rag_conn,
     )
 
     pipeline_tokens = pipeline_out["tokens"]
@@ -1137,8 +1202,10 @@ def main() -> None:
     cost = total_tokens / 1_000_000 * 0.60
 
     print("\n=== COST SUMMARY ===")
-    agent1_tokens = "included"
-    print(f"Agent 1 (OpenAI): {agent1_tokens}")
+    if args.real_cache:
+        print("Agent 1 (OpenAI): skipped (synthetic GVA/NYT rows; matches HW2_app.py)")
+    else:
+        print("Agent 1 (OpenAI): included (LLM relevance on hardcoded test articles)")
     print(f"Agents 2-4 (OpenAI): included")
     print(f"Total tokens:      {total_tokens:,}")
     print(f"Total cost:        ${cost:.4f}")
