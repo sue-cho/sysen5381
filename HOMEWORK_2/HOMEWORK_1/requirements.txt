@@ -1,0 +1,13 @@
+faicons
+markdown
+openai
+pyyaml
+shiny
+shinywidgets
+plotly
+pandas
+ridgeplot
+python-docx
+requests
+python-dotenv
+jinja2

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "locale": "en_US.UTF-8",
+  "locale": ".UTF-8",
   "metadata": {
     "appmode": "python-shiny",
     "entrypoint": "HW2_app:app"
@@ -18,7 +18,7 @@
       "checksum": "0f8050be8f744e6c631799be0c4e6e0c"
     },
     ".gitignore": {
-      "checksum": "ffa8a7618f7d174e3bcbe5bda924b089"
+      "checksum": "683420caeae3c79c3ab3d77478153ff4"
     },
     "04_rules.yaml": {
       "checksum": "dc3b561c54c094e315bc63af25572834"
@@ -54,16 +54,16 @@
       "checksum": "375604347ff318a96e948e12571506ec"
     },
     "HW2_app.py": {
-      "checksum": "ee777bdc125e55ba0dbc13aeeb23a78c"
+      "checksum": "4d3b24a69e9b32b7dd881a3ab3027d9e"
     },
     "HW2_multi_agent.py": {
-      "checksum": "e5fa12de04e4c86be51f4a89c765e3dd"
+      "checksum": "d45d8876866ff7df220bcc103327db4d"
     },
     "SYSTEM_DOCUMENTATION.md": {
       "checksum": "491f4db0bd633e75f427f3b2e579b241"
     },
     "manifestme.sh": {
-      "checksum": "9fab88de70118c8b553cc492e3c24d1d"
+      "checksum": "390d7b3762dc70a4f6f72e19f63a6519"
     },
     "rag_setup.py": {
       "checksum": "8d8cdee5e6463e33ef04ef81c8a518db"

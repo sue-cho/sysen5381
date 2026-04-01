@@ -43,14 +43,17 @@ HOMEWORK_2_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def homework1_dir() -> str:
     """
-    Development: ../HOMEWORK_1 next to HOMEWORK_2.
-    Posit / packed deploy: rsync copies HOMEWORK_1 into HOMEWORK_2/HOMEWORK_1/.
+    Prefer repo sibling ../HOMEWORK_1 when present (normal local dev).
+    Otherwise use bundled HOMEWORK_2/HOMEWORK_1/ (committed copy for Posit / self-contained deploy).
     """
     h2 = Path(HOMEWORK_2_DIR).resolve()
+    sibling = h2.parent / "HOMEWORK_1"
+    if sibling.is_dir():
+        return str(sibling)
     nested = h2 / "HOMEWORK_1"
     if nested.is_dir():
         return str(nested)
-    return str(h2.parent / "HOMEWORK_1")
+    return str(sibling)
 
 # OpenAI config (Agents 1-4)
 OPENAI_MODEL = "gpt-4o-mini"

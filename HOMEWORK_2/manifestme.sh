@@ -11,7 +11,6 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$SCRIPT_DIR"
 
-rm -rf HOMEWORK_1
 mkdir -p HOMEWORK_1
 rsync -a --delete \
   --exclude '__pycache__' \

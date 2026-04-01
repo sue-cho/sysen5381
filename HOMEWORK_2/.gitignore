@@ -1,6 +1,3 @@
 __pycache__/
 *.py[cod]
 data/*.db
-
-# Local copy created by manifestme.sh for Posit Connect (same sources as ../HOMEWORK_1)
-HOMEWORK_1/
