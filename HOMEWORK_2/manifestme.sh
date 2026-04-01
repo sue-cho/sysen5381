@@ -23,7 +23,7 @@ rsync -a --delete \
 pip install -q rsconnect-python 2>/dev/null || pip install rsconnect-python
 
 rsconnect write-manifest shiny . \
-  --entrypoint "HW2_app:app" \
+  --entrypoint "app:app" \
   --overwrite \
   -x "__pycache__" \
   -x "*.pyc" \

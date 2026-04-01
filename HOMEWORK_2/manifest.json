@@ -3,7 +3,7 @@
   "locale": ".UTF-8",
   "metadata": {
     "appmode": "python-shiny",
-    "entrypoint": "HW2_app:app"
+    "entrypoint": "app:app"
   },
   "python": {
     "version": "3.8.5",
@@ -62,8 +62,11 @@
     "SYSTEM_DOCUMENTATION.md": {
       "checksum": "491f4db0bd633e75f427f3b2e579b241"
     },
+    "app.py": {
+      "checksum": "68fe7b70aaff112eb5d6315292cce8a9"
+    },
     "manifestme.sh": {
-      "checksum": "390d7b3762dc70a4f6f72e19f63a6519"
+      "checksum": "77fd399c68c7afb07d45ce46e095e245"
     },
     "rag_setup.py": {
       "checksum": "8d8cdee5e6463e33ef04ef81c8a518db"
