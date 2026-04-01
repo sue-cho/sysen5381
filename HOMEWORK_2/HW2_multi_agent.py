@@ -1063,12 +1063,12 @@ def run_agent_pipeline(
     return result
 
 
-# 8. PRINT ALL OUTPUTS + 9. ITERATION LOG
+# 8. CLI ENTRY
 def main() -> None:
     total_tokens_used: Dict[str, int] = {"prompt": 0, "completion": 0}
     parser = argparse.ArgumentParser(description="HW2 multi-agent 2-state pipeline")
-    parser.add_argument("--state-a", default="IL", help="Two-letter state code for state A")
-    parser.add_argument("--state-b", default="MS", help="Two-letter state code for state B")
+    parser.add_argument("--state-a", default="OH", help="Two-letter state code for state A (default: Ohio)")
+    parser.add_argument("--state-b", default="LA", help="Two-letter state code for state B (default: Louisiana)")
     parser.add_argument(
         "--real-cache",
         action="store_true",
@@ -1171,12 +1171,6 @@ def main() -> None:
         if state_b_same_day is not None
         else f"{state_b} same-day coverage: N/A"
     )
-
-    # Placeholder outputs for future iterations.
-    print("\n# ITERATION LOG")
-    print("- Iteration 1: TODO")
-    print("- Iteration 2: TODO")
-    print("- Iteration 3: TODO")
 
 
 if __name__ == "__main__":
