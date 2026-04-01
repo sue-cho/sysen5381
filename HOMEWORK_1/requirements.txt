@@ -1,4 +1,5 @@
 faicons
+markdown
 shiny
 shinywidgets
 plotly

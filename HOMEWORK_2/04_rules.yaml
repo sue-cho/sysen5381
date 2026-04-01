@@ -1,0 +1,84 @@
+rules:
+  relevance_validation:
+  - id: "relevance-validation-v1"
+    name: "Relevance Validation Rules"
+    description: "Judge if an article actually covers the matched shooting event."
+    applies_when: "Always"
+    guidance: |
+      Your task: decide if the article actually covers the specific shooting event described.
+
+      Input you receive: headline, abstract, url, and a matched event (city, state, date, victim count).
+
+      Criteria:
+      - Mark relevant=true when the article appears to describe that incident (same city/area and date, or clearly the same incident even if date is approximate).
+      - Mark relevant=false when it is clearly unrelated (sports, politics without an incident, different city/state, different incident).
+      - Be inclusive when uncertain: prefer relevant=true rather than filtering out true coverage.
+
+      Output format (strict):
+      - Respond with only a single JSON object (no markdown, no code fences, no extra text).
+      - Must include: url (string), relevant (boolean), reason (one sentence).
+      - Example: {"url":"...","relevant":true,"reason":"..."}
+
+  demographics_enrichment:
+  - id: "demographics-enrichment-v1"
+    name: "Demographics Enrichment Rules"
+    description: "Build a state-level summary with coverage counts and Census demographics."
+    applies_when: "Always"
+    guidance: |
+      You are enriching a two-state comparison with Census demographics provided by a tool.
+
+      Rules:
+      - Never invent values. If demographics are missing, leave demographics as null.
+      - Preserve state totals and coverage counts exactly as computed in Python.
+      - Keep state labels explicit (e.g., IL, MS), never use placeholder names.
+
+      Output format:
+      - Return valid JSON only (no markdown, no code fences, no extra text).
+
+  pattern_analysis:
+  - id: "pattern-analysis-v1"
+    name: "Pattern Analysis Formatting Rules"
+    description: "Add narrative bullets from pre-computed statistics without changing numbers."
+    applies_when: "Always"
+    guidance: |
+      You are formatting pre-computed statistics into a markdown table. Do not recalculate or modify any numbers. Format exactly what is given to you.
+
+      Input:
+      - You will receive a markdown-formatted stats block (already computed in Python). It includes the markdown table and the key numeric summaries.
+
+      Output format:
+      - Output ONLY 3–5 bullet points (no tables).
+      - Each bullet must reference at least one specific number from the provided stats block.
+      - Do not add new calculations or derived numbers.
+      - If coverage speed data is available, include one bullet specifically addressing which state had faster coverage and what the difference means in practical terms (for example, "Illinois covered shootings an average of 3.2 days after the incident vs 12.5 days in Louisiana, suggesting more sustained follow-up reporting in Louisiana rather than breaking news coverage"). If speed data is unavailable for one or both states, note this as a data gap.
+      - If the input contains an OUTLIER_EVENTS section listing high-profile incidents (5+ matched NYT articles per GVA incident), you must include at least one bullet that names at least one such incident by city, state, and date, and states the article count. Explain briefly how that concentration of coverage can skew state-level rates. If OUTLIER_EVENTS says none, do not invent outliers.
+
+  report_writing:
+  - id: "report-writing-v1"
+    name: "Coverage Report Writing Rules"
+    description: "Write a concise coverage analysis report grounded in the provided stats table and bullets."
+    applies_when: "Always"
+    guidance: |
+      Write a 300–400 word coverage analysis report using only the provided table and bullet findings.
+
+      Requirements:
+      - Headline (max 80 characters)
+      - Lead paragraph: summarize the most striking demographic finding
+      - Findings section: cite specific numbers from the provided table/bullets
+      - Methodology note: single newspaper source, keyword matching caveat
+      - Recommendations: concrete next steps for the reader
+      - Structure the report as follows:
+        Paragraph 1: Lead with the most striking between-state finding (coverage rate gap or income anomaly)
+        Paragraph 2: State A - its coverage rate and what that means in context of its demographics
+        Paragraph 3: State B - same treatment
+        Paragraph 4: What the comparison suggests about coverage patterns, with explicit caveat that this is one newspaper only
+        Paragraph 5: Recommendations for further research or resources
+      - Always name states explicitly. Never use placeholder variable names.
+      - Demographic-threshold rule: only treat demographic variables as likely drivers when the between-state difference is greater than 15 percentage points. If the gap is <= 15pp, describe demographics as a minor/contextual difference rather than a primary explanation.
+      - If avg_days_to_first_article differs between states, dedicate 2-3 sentences in the state-specific paragraphs to what coverage speed implies - fast coverage (0-2 days) suggests breaking news attention, slow coverage (14+ days) suggests investigative or follow-up pieces rather than immediate reporting. Frame speed as a dimension of coverage quality, not just quantity.
+      - If same_day_coverage_pct is available, mention it as context for how quickly each state's shootings reached national attention.
+      - If OUTLIER_EVENTS in the stats block lists any high-profile incidents (5+ matched articles), dedicate at least one sentence in the findings or between-state discussion to that skew (do not ignore listed outliers). If OUTLIER_EVENTS is none, do not invent outliers.
+
+      Style:
+      - Short paragraphs (2–3 sentences).
+      - No tables and no markdown code fences.
