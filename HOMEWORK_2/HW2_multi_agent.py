@@ -40,6 +40,18 @@ from bs4 import BeautifulSoup  # noqa: F401  (installed dependency; not required
 # 0. IMPORTS AND SETUP
 HOMEWORK_2_DIR = os.path.dirname(os.path.abspath(__file__))
 
+
+def homework1_dir() -> str:
+    """
+    Development: ../HOMEWORK_1 next to HOMEWORK_2.
+    Posit / packed deploy: rsync copies HOMEWORK_1 into HOMEWORK_2/HOMEWORK_1/.
+    """
+    h2 = Path(HOMEWORK_2_DIR).resolve()
+    nested = h2 / "HOMEWORK_1"
+    if nested.is_dir():
+        return str(nested)
+    return str(h2.parent / "HOMEWORK_1")
+
 # OpenAI config (Agents 1-4)
 OPENAI_MODEL = "gpt-4o-mini"
 # GVA incident with this many matched NYT URLs (unique) is flagged for Agent 3/4 narrative.
@@ -386,7 +398,7 @@ def _build_gva_events_and_candidates(
     Shared loader: GVA 2025 events for selected state abbreviations + optional Agent 1 URL cap.
     Each event includes is_outlier when ≥ HIGH_PROFILE_ARTICLE_THRESHOLD unique matched URLs.
     """
-    home1_dir = os.path.join(os.path.dirname(HOMEWORK_2_DIR), "HOMEWORK_1")
+    home1_dir = homework1_dir()
     cache_path = os.path.join(home1_dir, "nyt_2025_shootings_cache.json")
     gva_path = os.path.join(home1_dir, "gva_mass_shootings-2026-02-08.csv")
 
@@ -601,8 +613,7 @@ def _load_rag_conn_like_app() -> Any:
     try:
         from rag_setup import setup_rag
 
-        repo_root = Path(HOMEWORK_2_DIR).resolve().parent
-        cache_path = repo_root / "HOMEWORK_1" / "nyt_2025_shootings_cache.json"
+        cache_path = Path(homework1_dir()) / "nyt_2025_shootings_cache.json"
         data_dir = Path(HOMEWORK_2_DIR) / "data"
         return setup_rag(
             cache_path=cache_path,
@@ -1016,7 +1027,7 @@ def run_agent_pipeline(
     print(json.dumps(state_summary, indent=2))
 
     if rag_conn is None:
-        cache_path = Path(os.path.join(os.path.dirname(HOMEWORK_2_DIR), "HOMEWORK_1", "nyt_2025_shootings_cache.json"))
+        cache_path = Path(homework1_dir()) / "nyt_2025_shootings_cache.json"
         data_dir = Path(os.path.join(HOMEWORK_2_DIR, "data"))
         # Convert to title-case keys expected by setup_rag examples.
         name_map = {k.title(): v for k, v in STATE_NAME_TO_ABBR.items()}

@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "python-shiny",
+    "entrypoint": "HW2_app:app"
+  },
+  "python": {
+    "version": "3.8.5",
+    "package_manager": {
+      "name": "pip",
+      "version": "25.0.1",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "0f8050be8f744e6c631799be0c4e6e0c"
+    },
+    ".gitignore": {
+      "checksum": "ffa8a7618f7d174e3bcbe5bda924b089"
+    },
+    "04_rules.yaml": {
+      "checksum": "dc3b561c54c094e315bc63af25572834"
+    },
+    "HOMEWORK_1/HW1_api_query.py": {
+      "checksum": "145cd1fc02909569fde4a8b3f3b3995e"
+    },
+    "HOMEWORK_1/HW1_app.py": {
+      "checksum": "4f8b507a80fc66b650201fd4a3d0d877"
+    },
+    "HOMEWORK_1/HW1_data_reporter.py": {
+      "checksum": "b15ae87115d471ea943b2081174ab71c"
+    },
+    "HOMEWORK_1/HW1_nyt_cache.py": {
+      "checksum": "a70f7ab3dd165179b946c6c11b81f94b"
+    },
+    "HOMEWORK_1/HW1_nyt_test.py": {
+      "checksum": "c2dd6ca1ad96881be2b7c2328653ad60"
+    },
+    "HOMEWORK_1/HW1_state_analysis.py": {
+      "checksum": "ee97b57572d903e7124b42c04e550f20"
+    },
+    "HOMEWORK_1/README.md": {
+      "checksum": "86cf8fa1a7330c75759201c506d36d33"
+    },
+    "HOMEWORK_1/gva_mass_shootings-2026-02-08.csv": {
+      "checksum": "1f31d17fb60e3a4c91b1b98a18598703"
+    },
+    "HOMEWORK_1/nyt_2025_shootings_cache.json": {
+      "checksum": "e5e452ad3a1b580edae79d3cbc03f43b"
+    },
+    "HOMEWORK_1/requirements.txt": {
+      "checksum": "375604347ff318a96e948e12571506ec"
+    },
+    "HW2_app.py": {
+      "checksum": "ee777bdc125e55ba0dbc13aeeb23a78c"
+    },
+    "HW2_multi_agent.py": {
+      "checksum": "e5fa12de04e4c86be51f4a89c765e3dd"
+    },
+    "SYSTEM_DOCUMENTATION.md": {
+      "checksum": "491f4db0bd633e75f427f3b2e579b241"
+    },
+    "manifestme.sh": {
+      "checksum": "9fab88de70118c8b553cc492e3c24d1d"
+    },
+    "rag_setup.py": {
+      "checksum": "8d8cdee5e6463e33ef04ef81c8a518db"
+    },
+    "run_hw2_app.sh": {
+      "checksum": "2ab9662509d8a904139f34813c04c03d"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "locale": ".UTF-8",
+  "metadata": {
+    "appmode": "python-shiny",
+    "entrypoint": "app:app"
+  },
+  "python": {
+    "version": "3.8.5",
+    "package_manager": {
+      "name": "pip",
+      "version": "25.0.1",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "1817ec6aff152e87f929cb439e87a2f9"
+    },
+    ".gitignore": {
+      "checksum": "37644a37304988eb28cb1e0e15cbe569"
+    },
+    "HOMEWORK_1/HW1_api_query.py": {
+      "checksum": "145cd1fc02909569fde4a8b3f3b3995e"
+    },
+    "HOMEWORK_1/HW1_app.py": {
+      "checksum": "4f8b507a80fc66b650201fd4a3d0d877"
+    },
+    "HOMEWORK_1/HW1_data_reporter.py": {
+      "checksum": "b15ae87115d471ea943b2081174ab71c"
+    },
+    "HOMEWORK_1/HW1_nyt_cache.py": {
+      "checksum": "a70f7ab3dd165179b946c6c11b81f94b"
+    },
+    "HOMEWORK_1/HW1_nyt_test.py": {
+      "checksum": "c2dd6ca1ad96881be2b7c2328653ad60"
+    },
+    "HOMEWORK_1/HW1_state_analysis.py": {
+      "checksum": "ee97b57572d903e7124b42c04e550f20"
+    },
+    "HOMEWORK_1/README.md": {
+      "checksum": "86cf8fa1a7330c75759201c506d36d33"
+    },
+    "HOMEWORK_1/gva_mass_shootings-2026-02-08.csv": {
+      "checksum": "1f31d17fb60e3a4c91b1b98a18598703"
+    },
+    "HOMEWORK_1/manifest.json": {
+      "checksum": "ea7306e38732f2d69d9825b55e56b1e0"
+    },
+    "HOMEWORK_1/manifestme.sh": {
+      "checksum": "881a4cbfa26594edf337517607392e7c"
+    },
+    "HOMEWORK_1/nyt_2025_shootings_cache.json": {
+      "checksum": "e5e452ad3a1b580edae79d3cbc03f43b"
+    },
+    "HOMEWORK_1/requirements.txt": {
+      "checksum": "375604347ff318a96e948e12571506ec"
+    },
+    "HOMEWORK_2/.gitignore": {
+      "checksum": "683420caeae3c79c3ab3d77478153ff4"
+    },
+    "HOMEWORK_2/04_rules.yaml": {
+      "checksum": "dc3b561c54c094e315bc63af25572834"
+    },
+    "HOMEWORK_2/HW2_app.py": {
+      "checksum": "c657f5e6c63af1867e829cfc0a8c589d"
+    },
+    "HOMEWORK_2/HW2_multi_agent.py": {
+      "checksum": "c8910817f8f199b5ff19054b8eddc76a"
+    },
+    "HOMEWORK_2/SYSTEM_DOCUMENTATION.md": {
+      "checksum": "491f4db0bd633e75f427f3b2e579b241"
+    },
+    "HOMEWORK_2/rag_setup.py": {
+      "checksum": "8d8cdee5e6463e33ef04ef81c8a518db"
+    },
+    "HOMEWORK_2/run_hw2_app.sh": {
+      "checksum": "2ab9662509d8a904139f34813c04c03d"
+    },
+    "README.md": {
+      "checksum": "c349febb355710a2e672cbc581f78260"
+    },
+    "app.py": {
+      "checksum": "345fe812c464ee5f93d89c4b8dfb2874"
+    },
+    "manifestme.sh": {
+      "checksum": "2e20b2bf6078b4680b45beb30fe6040c"
+    },
+    "testme.sh": {
+      "checksum": "77a879b2eb1d1aa1588af3528323da7c"
+    }
+  }
+}

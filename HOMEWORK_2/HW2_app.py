@@ -10,9 +10,14 @@ import sys
 import traceback
 from typing import Any, Dict, List, Optional
 
-_REPO_ROOT = Path(__file__).resolve().parent.parent
+# Repo layout: HOMEWORK_2/HW2_app.py -> ../HOMEWORK_1. Packed deploy: HOMEWORK_1/ copied under HOMEWORK_2/.
+_hw2 = Path(__file__).resolve().parent
+if (_hw2 / "HOMEWORK_1").is_dir():
+    _REPO_ROOT = _hw2
+else:
+    _REPO_ROOT = _hw2.parent
 _HOMEWORK_1 = _REPO_ROOT / "HOMEWORK_1"
-_HOMEWORK_2 = Path(__file__).resolve().parent
+_HOMEWORK_2 = _hw2
 if str(_HOMEWORK_1) not in sys.path:
     sys.path.insert(0, str(_HOMEWORK_1))
 if str(_HOMEWORK_2) not in sys.path:
