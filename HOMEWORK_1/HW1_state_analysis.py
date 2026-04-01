@@ -54,7 +54,16 @@ def filter_articles_by_city_and_keywords(
     def mentions_city_as_place(a):
         h = (a.get("headline") or {}).get("main") or ""
         ab = a.get("abstract") or ""
-        combined = (h + " " + ab).strip()
+        sn = a.get("snippet") or ""
+        lead = a.get("lead_paragraph") or ""
+        kw_parts: List[str] = []
+        kws = a.get("keywords")
+        if isinstance(kws, list):
+            for item in kws:
+                if isinstance(item, dict) and item.get("value"):
+                    kw_parts.append(str(item.get("value", "")))
+        kw_text = " ".join(kw_parts)
+        combined = (h + " " + ab + " " + sn + " " + lead + " " + kw_text).strip()
         return bool(city_pattern.search(combined))
 
     def has_keyword(a):
