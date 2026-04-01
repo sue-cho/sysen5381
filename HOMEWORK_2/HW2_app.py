@@ -10,18 +10,10 @@ import sys
 import traceback
 from typing import Any, Dict, List, Optional
 
-# Repo layout: HOMEWORK_2/HW2_app.py -> ../HOMEWORK_1. Packed deploy: HOMEWORK_1/ copied under HOMEWORK_2/.
+# HOMEWORK_2 on sys.path first so we can import homework1_dir (must match GVA/NYT paths in HW2_multi_agent).
 _hw2 = Path(__file__).resolve().parent
-if (_hw2 / "HOMEWORK_1").is_dir():
-    _REPO_ROOT = _hw2
-else:
-    _REPO_ROOT = _hw2.parent
-_HOMEWORK_1 = _REPO_ROOT / "HOMEWORK_1"
-_HOMEWORK_2 = _hw2
-if str(_HOMEWORK_1) not in sys.path:
-    sys.path.insert(0, str(_HOMEWORK_1))
-if str(_HOMEWORK_2) not in sys.path:
-    sys.path.insert(0, str(_HOMEWORK_2))
+if str(_hw2) not in sys.path:
+    sys.path.insert(0, str(_hw2))
 
 import pandas as pd
 import plotly.express as px
@@ -33,8 +25,17 @@ from HW2_multi_agent import (
     HIGH_PROFILE_ARTICLE_THRESHOLD,
     STATE_NAME_TO_ABBR,
     build_gva_events_for_states,
+    homework1_dir,
     run_agent_pipeline,
 )
+
+_HOMEWORK_1 = Path(homework1_dir())
+_HOMEWORK_2 = Path(__file__).resolve().parent
+for p in (_HOMEWORK_1, _HOMEWORK_2):
+    if str(p) not in sys.path:
+        sys.path.insert(0, str(p))
+
+_ALL_STATES_ABBR = list(STATE_NAME_TO_ABBR.values())
 from HW1_state_analysis import (
     get_states_2025,
     run_state_analysis,
@@ -75,38 +76,17 @@ def compute_national_stats(events):
     return pd.DataFrame(rows)
 
 
-# --- HW2: national stats for map (load at import; uses GVA + NYT cache on disk) ---
-NATIONAL_STATS_LOAD_ERROR: Optional[str] = None
-try:
-    _all_states_abbr = list(STATE_NAME_TO_ABBR.values())
-    hw2_events_all, _ = build_gva_events_for_states(_all_states_abbr, max_articles=0)
-    national_stats = compute_national_stats(hw2_events_all)
-except Exception as _hw2_nat_err:
-    NATIONAL_STATS_LOAD_ERROR = str(_hw2_nat_err)
-    hw2_events_all = []
-    national_stats = pd.DataFrame(
-        columns=[
-            "state_abbr",
-            "state_name",
-            "total_events",
-            "covered_events",
-            "coverage_rate",
-            "outlier_count",
-        ]
-    )
-    print(f"[HW2_app] National stats load failed: {_hw2_nat_err}", flush=True)
-
-# --- END HW2 national preload ---
+# National stats + hw2_events_all are computed in the server after NYT cache load (init_cache),
+# so they use the same on-disk cache as load_or_build_2025_cache — not import-time (fixes Connect drift).
 
 # --- HW2 ADDITION: pipeline startup ---
-# Note: hw2_events_all already loaded in national preload block above.
 # RAG loaded once at startup across all states (reactive per-state use later).
 rag_conn = None
 try:
     from rag_setup import setup_rag
 
     rag_conn = setup_rag(
-        cache_path=_REPO_ROOT / "HOMEWORK_1/nyt_2025_shootings_cache.json",
+        cache_path=_HOMEWORK_1 / "nyt_2025_shootings_cache.json",
         states=list(STATE_NAME_TO_ABBR.values()),
         state_name_to_abbr=STATE_NAME_TO_ABBR,
         data_dir=_HOMEWORK_2 / "data",
@@ -292,7 +272,12 @@ def _write_hw2_pipeline_docx(
     doc.save(str(out_path))
 
 
-def _national_map_figure_bundle(df: pd.DataFrame) -> dict:
+def _national_map_figure_bundle(
+    df: pd.DataFrame,
+    *,
+    load_error: Optional[str] = None,
+    is_loading: bool = False,
+) -> dict:
     """
     Build the U.S. choropleth. Returns {"figure", "error", "diagnostics"}.
     On failure, figure is a placeholder with a short title; error holds the full traceback.
@@ -304,8 +289,8 @@ def _national_map_figure_bundle(df: pd.DataFrame) -> dict:
         f"DataFrame rows: {len(df)}",
         f"columns present: {list(df.columns)}",
     ]
-    if NATIONAL_STATS_LOAD_ERROR:
-        diag_lines.append(f"import-time national stats error: {NATIONAL_STATS_LOAD_ERROR}")
+    if load_error:
+        diag_lines.append(f"national stats error: {load_error}")
 
     def _fallback_fig(title: str, subtitle: str = "") -> go.Figure:
         fig = go.Figure()
@@ -317,6 +302,14 @@ def _national_map_figure_bundle(df: pd.DataFrame) -> dict:
             margin={"r": 0, "t": 60, "l": 0, "b": 0},
         )
         return fig
+
+    if is_loading:
+        diag_lines.append("reason: waiting for NYT cache + GVA match load")
+        return {
+            "figure": _fallback_fig("National Picture", "Loading coverage data after NYT cache…"),
+            "error": None,
+            "diagnostics": "\n".join(diag_lines),
+        }
 
     if df.empty or "state_abbr" not in df.columns:
         diag_lines.append("reason: empty DataFrame or missing state_abbr")
@@ -886,28 +879,72 @@ def server(input: Inputs, output: Outputs, session: Session):
     stats_data_rv = reactive.Value(None)  # dict of pre-computed stats for Report tab UI
     outlier_data_rv = reactive.Value(None)  # list of outlier events for Report tab
     agent3_bullets_rv = reactive.Value(None)  # bullet strings only
+    # Populated after NYT cache load so GVA↔NYT matching uses the same file as Compare States.
+    hw2_events_rv = reactive.Value(None)
+    national_stats_rv = reactive.Value(None)
+    national_stats_err_rv = reactive.Value(None)
+
+    _empty_national_cols = [
+        "state_abbr",
+        "state_name",
+        "total_events",
+        "covered_events",
+        "coverage_rate",
+        "outlier_count",
+    ]
 
     @reactive.calc
     def national_map_bundle():
-        return _national_map_figure_bundle(national_stats.copy())
+        ns = national_stats_rv.get()
+        err = national_stats_err_rv.get()
+        if ns is None and err is None:
+            return _national_map_figure_bundle(pd.DataFrame(), is_loading=True)
+        if err:
+            return _national_map_figure_bundle(
+                pd.DataFrame(columns=_empty_national_cols),
+                load_error=err,
+            )
+        return _national_map_figure_bundle(ns.copy())
 
     @output
     @render.ui
     def national_map():
         return _plotly_figure_iframe_ui(national_map_bundle()["figure"])
 
-    # Load cache once when app starts
+    # Load cache once when app starts, then build national map + hw2_events from same JSON + GVA CSV.
     @reactive.effect
     def init_cache():
         if cache_articles.get() is not None or cache_error.get() is not None:
             return
         try:
-            articles = load_or_build_2025_cache()
+            articles = load_or_build_2025_cache(
+                cache_path=_HOMEWORK_1 / "nyt_2025_shootings_cache.json",
+            )
             cache_articles.set(articles)
             cache_error.set(None)
+            try:
+                ev, _ = build_gva_events_for_states(_ALL_STATES_ABBR, max_articles=0)
+                national_stats_rv.set(compute_national_stats(ev))
+                hw2_events_rv.set(ev)
+                national_stats_err_rv.set(None)
+                print(
+                    f"[HW2_app] National map: {len(ev)} GVA events; "
+                    f"homework1_dir={homework1_dir()}",
+                    flush=True,
+                )
+            except Exception as ex:
+                national_stats_err_rv.set(str(ex))
+                hw2_events_rv.set([])
+                national_stats_rv.set(
+                    pd.DataFrame(columns=_empty_national_cols),
+                )
+                print(f"[HW2_app] National stats / GVA match failed: {ex}", flush=True)
         except Exception as e:
             cache_articles.set(None)
             cache_error.set(str(e))
+            national_stats_err_rv.set(f"NYT cache: {e}")
+            hw2_events_rv.set([])
+            national_stats_rv.set(pd.DataFrame(columns=_empty_national_cols))
 
     @output
     @render.ui
@@ -933,9 +970,12 @@ def server(input: Inputs, output: Outputs, session: Session):
         if not abbr_a or not abbr_b:
             return "Select two states to begin."
 
+        ev_all = hw2_events_rv.get()
+        if ev_all is None:
+            return "Loading GVA / NYT event match data…"
         state_events = [
             e
-            for e in hw2_events_all
+            for e in ev_all
             if e.get("state") in [abbr_a, abbr_b]
         ]
         total = len(state_events)
@@ -964,9 +1004,12 @@ def server(input: Inputs, output: Outputs, session: Session):
         if not abbr_a or not abbr_b:
             return ui.div()
 
+        ev_all = hw2_events_rv.get()
+        if ev_all is None:
+            return ui.div()
         outliers = [
             e
-            for e in hw2_events_all
+            for e in ev_all
             if e.get("state") in [abbr_a, abbr_b] and e.get("is_outlier")
         ]
         if not outliers:
@@ -1027,9 +1070,24 @@ def server(input: Inputs, output: Outputs, session: Session):
         outlier_data_rv.set(None)
         agent3_bullets_rv.set(None)
 
+        ev_all = hw2_events_rv.get()
+        if ev_all is None:
+            report_rv.set(
+                "## Report unavailable\n\nGVA / NYT event data is still loading. "
+                "Wait for the green NYT cache banner, then try again."
+            )
+            report_progress_rv.set(
+                {
+                    "agent1": "done",
+                    "agent2": "done",
+                    "agent3": "done",
+                    "agent4": "done",
+                }
+            )
+            return
         selected_events = [
             e
-            for e in hw2_events_all
+            for e in ev_all
             if e.get("state") in [abbr_a, abbr_b]
         ]
         validated_articles = _synthetic_validated_from_gva_events(selected_events)
