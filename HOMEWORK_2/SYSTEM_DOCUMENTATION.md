@@ -208,7 +208,7 @@ Open **http://127.0.0.1:8001**. First startup may build the RAG SQLite index und
 ```bash
 cd HOMEWORK_2
 export OPENAI_API_KEY="sk-..."
-python HW2_multi_agent.py --real-cache --state-a IL --state-b MS --max-articles 120
+python HW2_multi_agent.py --real-cache --state-a OH --state-b LA --max-articles 120
 ```
 
 Use `--help` for flags.
