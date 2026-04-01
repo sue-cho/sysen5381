@@ -1,7 +1,61 @@
 # HW2_app.py
 # NYT Articles analysis: understand mass shooting coverage by state.
 # Layout variant of HW1_app.py (tabs + header + global CSS); server logic unchanged.
+# === TEMPORARY DEPLOYMENT DIAGNOSIS - REMOVE AFTER ===
+import os
+from pathlib import Path as _Path
 
+print("=== DEPLOYMENT DIAGNOSIS ===")
+print(f"Working directory: {os.getcwd()}")
+print(f"__file__ location: {_Path(__file__).resolve()}")
+print(f"Files in cwd: {sorted(os.listdir('.'))}")
+
+_repo_root = _Path(__file__).resolve().parent.parent
+print(f"Repo root: {_repo_root}")
+print(f"Contents of repo root: {sorted(os.listdir(_repo_root))}")
+
+_cache = _repo_root / "HOMEWORK_1" / "nyt_2025_shootings_cache.json"
+_gva = _repo_root / "HOMEWORK_1" / "gva_data.csv"
+
+print(f"Cache path tried: {_cache}")
+print(f"Cache exists: {_cache.exists()}")
+if _cache.exists():
+    print(f"Cache size (bytes): {_cache.stat().st_size}")
+    import json as _json
+    with open(_cache) as _f:
+        _cache_data = _json.load(_f)
+    print(f"Cache article count: {len(_cache_data)}")
+    _nv = [
+        a for a in _cache_data
+        if "nevada" in (
+            a.get("abstract", "") +
+            a.get("headline", {}).get("main", "")
+        ).lower()
+    ]
+    print(f"Nevada articles in cache: {len(_nv)}")
+else:
+    print("CACHE MISSING - this is the problem")
+
+print(f"GVA path tried: {_gva}")
+print(f"GVA exists: {_gva.exists()}")
+if _gva.exists():
+    print(f"GVA size (bytes): {_gva.stat().st_size}")
+    import pandas as _pd
+    _gva_df = _pd.read_csv(_gva)
+    print(f"GVA total rows: {len(_gva_df)}")
+    print(f"GVA 2025 rows: {len(_gva_df[_gva_df['year']==2025])}")
+    _nv_gva = _gva_df[
+        (_gva_df['year']==2025) &
+        (_gva_df['state']=='Nevada')
+    ]
+    print(f"Nevada 2025 GVA events: {len(_nv_gva)}")
+    if len(_nv_gva) > 0:
+        print(_nv_gva[['city_or_county','date_fixed']].to_string())
+else:
+    print("GVA MISSING - this is the problem")
+
+print("=== END DIAGNOSIS ===")
+# === END TEMPORARY DIAGNOSIS ===
 from collections import defaultdict
 import base64
 import json
