@@ -51668,5 +51668,4385 @@
 "uri": "nyt://article/72d68e98-e046-58ba-bb51-c6b08998a733",
 "web_url": "https://www.nytimes.com/2025/05/15/us/texas-mom-arrested-school-shooting.html",
 "word_count": 584
+},
+{
+"abstract": "The number of people killed by the police has risen every year since the murder of Mr. Floyd by a Minneapolis officer in 2020.",
+"byline": {
+"original": "By Steven Rich, Tim Arango, Nicholas Bogel-Burroughs and Daniel Wood"
+},
+"document_type": "article",
+"headline": {
+"main": "Since George Floyd’s Murder, Police Killings Keep Rising, Not Falling",
+"kicker": "",
+"print_headline": "Rise in Killings By Police Dims Floyd’s Legacy"
+},
+"_id": "nyt://article/5d2ef3a0-c8f6-5933-9b5a-04804da4fcfe",
+"keywords": [
+{
+"name": "Subject",
+"value": "Police Brutality, Misconduct and Shootings",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Police",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Police Reform",
+"rank": 4
+},
+{
+"name": "Person",
+"value": "Floyd, George (d 2020)",
+"rank": 5
+},
+{
+"name": "Location",
+"value": "United States",
+"rank": 6
+},
+{
+"name": "Subject",
+"value": "States (US)",
+"rank": 7
+},
+{
+"name": "Subject",
+"value": "Black People",
+"rank": 8
+}
+],
+"multimedia": {
+"caption": "",
+"credit": "Dan Wood",
+"default": {
+"url": "https://static01.nyt.com/images/2025/05/23/multimedia/promo-1748033921625/promo-1748033921625-articleLarge-v5.png",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/05/23/multimedia/promo-1748033921625/promo-1748033921625-thumbStandard-v5.png",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "1",
+"print_section": "A",
+"pub_date": "2025-05-24T09:01:02Z",
+"section_name": "U.S.",
+"snippet": "The number of people killed by the police has risen every year since the murder of Mr. Floyd by a Minneapolis officer in 2020.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/5d2ef3a0-c8f6-5933-9b5a-04804da4fcfe",
+"web_url": "https://www.nytimes.com/2025/05/24/us/police-killings-george-floyd.html",
+"word_count": 1497
+},
+{
+"abstract": "The authorities said a man used a chain saw to destroy more than a dozen trees in downtown Los Angeles, an attack that saddened and rattled residents and city leaders.",
+"byline": {
+"original": "By Jesus Jiménez"
+},
+"document_type": "article",
+"headline": {
+"main": "Downtown L.A. Has Seen Its Share of Violence. Then Someone Went After Its Trees.",
+"kicker": "",
+"print_headline": "In Los Angeles, Trees Felled by a Chain Saw Leave Residents Rattled"
+},
+"_id": "nyt://article/2ba0ea17-b5c2-5410-afd8-80feb60965c7",
+"keywords": [
+{
+"name": "Location",
+"value": "Los Angeles (Calif)",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Vandalism",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Trees and Shrubs",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Homeless Persons",
+"rank": 4
+},
+{
+"name": "Person",
+"value": "Hochman, Nathan (1963- )",
+"rank": 5
+}
+],
+"multimedia": {
+"caption": "“What took years to grow only took minutes to destroy,” Nathan Hochman, the Los Angeles County district attorney, said of the attack on trees in downtown L.A. ",
+"credit": "Philip Cheung for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/04/25/multimedia/25NAT-LA-TREES-01-vhpz/25NAT-LA-TREES-01-vhpz-articleLarge.jpg",
+"height": 449,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/04/25/multimedia/25NAT-LA-TREES-01-vhpz/25NAT-LA-TREES-01-vhpz-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "20",
+"print_section": "A",
+"pub_date": "2025-04-25T21:43:34Z",
+"section_name": "U.S.",
+"snippet": "The authorities said a man used a chain saw to destroy more than a dozen trees in downtown Los Angeles, an attack that saddened and rattled residents and city leaders.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/2ba0ea17-b5c2-5410-afd8-80feb60965c7",
+"web_url": "https://www.nytimes.com/2025/04/25/us/los-angeles-trees-violence-crime.html",
+"word_count": 1064
+},
+{
+"abstract": "Three others were injured in the shooting on a suburban street in Spotsylvania County, southwest of Washington, D.C. Four suspects were in custody, the authorities said.",
+"byline": {
+"original": "By Hank Sanders, Alexandra E. Petri and Jonathan Wolfe"
+},
+"document_type": "article",
+"headline": {
+"main": "3 Are Killed in Shooting Near Fredericksburg, Va., Authorities Say",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/d9832802-864c-562d-a533-7a6511411cea",
+"keywords": [
+{
+"name": "Location",
+"value": "Fredericksburg (Va)",
+"rank": 1
+},
+{
+"name": "Location",
+"value": "Spotsylvania County (Va)",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Deaths (Fatalities)",
+"rank": 3
+}
+],
+"multimedia": {
+"caption": "Sheriff’s officers responded to a shooting on Tuesday outside Fredericksburg, Va., in which three people were killed, the authorities said.",
+"credit": "FOX 5",
+"default": {
+"url": "https://static01.nyt.com/images/2025/04/08/multimedia/08xp-shooting/08xp-shooting-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/04/08/multimedia/08xp-shooting/08xp-shooting-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Express",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-04-08T23:47:08Z",
+"section_name": "U.S.",
+"snippet": "Three others were injured in the shooting on a suburban street in Spotsylvania County, southwest of Washington, D.C. Four suspects were in custody, the authorities said.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/d9832802-864c-562d-a533-7a6511411cea",
+"web_url": "https://www.nytimes.com/2025/04/08/us/shooting-virginia-fredericksburg.html",
+"word_count": 365
+},
+{
+"abstract": "The police shot the gunman after he fired at them during the attack at the Grand Sierra Resort and Casino, the authorities said. Two of his victims remained in critical condition.",
+"byline": {
+"original": "By Christine Hauser, Alex Hoeft and Neil Vigdor"
+},
+"document_type": "article",
+"headline": {
+"main": "Gunman Shoots 6 at Reno Casino Resort, Killing 3, Police Say",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/fe528e01-6a6b-53be-afbe-17b8500aa2fe",
+"keywords": [
+{
+"name": "Subject",
+"value": "Casinos",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 2
+},
+{
+"name": "Organization",
+"value": "Associated Press",
+"rank": 3
+},
+{
+"name": "Location",
+"value": "Reno (Nev)",
+"rank": 4
+}
+],
+"multimedia": {
+"caption": "The Grand Sierra Resort in Reno, Nev.",
+"credit": "Emily Najera for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/07/28/multimedia/28xp-reno-zmjw/28xp-reno-zmjw-articleLarge.jpg",
+"height": 450,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/07/28/multimedia/28xp-reno-zmjw/28xp-reno-zmjw-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Express",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-07-28T17:23:45Z",
+"section_name": "U.S.",
+"snippet": "The police shot the gunman after he fired at them during the attack at the Grand Sierra Resort and Casino, the authorities said. Two of his victims remained in critical condition.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/fe528e01-6a6b-53be-afbe-17b8500aa2fe",
+"web_url": "https://www.nytimes.com/2025/07/28/us/reno-shooting-casino.html",
+"word_count": 630
+},
+{
+"abstract": "The police said that a gunman had shot randomly at a group that was preparing to head home to California after a bachelor party weekend. Three people died in the shooting, and three others were injured.",
+"byline": {
+"original": "By Soumya Karlamangla, Orlando Mayorquín and Alex Hoeft"
+},
+"document_type": "article",
+"headline": {
+"main": "Reno Shooting Shatters Lives at a Bachelor Party",
+"kicker": "",
+"print_headline": "Celebration Ends in Horror In Random Shooting in Reno"
+},
+"_id": "nyt://article/8ed0600f-e3bf-59d2-a1ea-5f001e6c78f8",
+"keywords": [
+{
+"name": "Location",
+"value": "Reno (Nev)",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Mass Shootings",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Friendship",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Parties (Social)",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "Hotels and Travel Lodgings",
+"rank": 6
+}
+],
+"multimedia": {
+"caption": "The police responded to a shooting outside the Grand Sierra Resort in Reno, Nev., on Monday.",
+"credit": "Andy Barron/Associated Press",
+"default": {
+"url": "https://static01.nyt.com/images/2025/07/29/multimedia/29nat-reno-shooting-lfkc/29nat-reno-shooting-lfkc-articleLarge.jpg",
+"height": 434,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/07/29/multimedia/29nat-reno-shooting-lfkc/29nat-reno-shooting-lfkc-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "16",
+"print_section": "A",
+"pub_date": "2025-07-30T04:01:52Z",
+"section_name": "U.S.",
+"snippet": "The police said that a gunman had shot randomly at a group that was preparing to head home to California after a bachelor party weekend. Three people died in the shooting, and three others were injured.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/8ed0600f-e3bf-59d2-a1ea-5f001e6c78f8",
+"web_url": "https://www.nytimes.com/2025/07/30/us/reno-casino-shooting-bachelor-party.html",
+"word_count": 1031
+},
+{
+"abstract": "Ethan Nieneker, identified by police as the gunman who had led them on a violent chase, had a history of domestic violence, mental health problems and arrests.",
+"byline": {
+"original": "By Pooja Salhotra and Dave Montgomery"
+},
+"document_type": "article",
+"headline": {
+"main": "Victims of Austin Gunman Included Grandfather and 4-Year-Old Granddaughter",
+"kicker": "",
+"print_headline": "Austin Police Detail Shooting at a Target Store That Killed 3"
+},
+"_id": "nyt://article/1dd02def-db2d-5652-85c0-53340da50dfe",
+"keywords": [
+{
+"name": "Subject",
+"value": "Robberies and Thefts",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Mental Health and Disorders",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Deaths (Fatalities)",
+"rank": 4
+},
+{
+"name": "Location",
+"value": "Austin (Tex)",
+"rank": 5
+},
+{
+"name": "Location",
+"value": "Texas",
+"rank": 6
+},
+{
+"name": "Organization",
+"value": "Target Corporation",
+"rank": 7
+}
+],
+"multimedia": {
+"caption": "",
+"credit": "Brandon Bell/Getty Images",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/12/multimedia/12nat-texas-shooting-new-vid-cover-hlkq/12nat-texas-shooting-new-vid-cover-hlkq-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/12/multimedia/12nat-texas-shooting-new-vid-cover-hlkq/12nat-texas-shooting-new-vid-cover-hlkq-thumbStandard-v2.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "15",
+"print_section": "A",
+"pub_date": "2025-08-11T21:30:50Z",
+"section_name": "U.S.",
+"snippet": "Ethan Nieneker, identified by police as the gunman who had led them on a violent chase, had a history of domestic violence, mental health problems and arrests.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/1dd02def-db2d-5652-85c0-53340da50dfe",
+"web_url": "https://www.nytimes.com/2025/08/11/us/austin-shooting.html",
+"word_count": 699
+},
+{
+"abstract": "The path to diplomacy appeared to narrow after officials called off talks that had been set for Sunday between Tehran and Washington on Iran’s nuclear program.",
+"byline": {
+"original": "By Natan Odenheimer, Farnaz Fassihi, Aaron Boxerman and Eric Nagourney"
+},
+"document_type": "article",
+"headline": {
+"main": "Israel and Iran Trade Attacks as Toll From Conflict Mounts",
+"kicker": "",
+"print_headline": "Israel And Iran Trade Blasts As Toll Rises"
+},
+"_id": "nyt://article/e8bbb2e0-e5e5-528a-9078-7c4dcf24ea5a",
+"keywords": [
+{
+"name": "Subject",
+"value": "War and Armed Conflicts",
+"rank": 1
+},
+{
+"name": "Location",
+"value": "Israel",
+"rank": 2
+},
+{
+"name": "Location",
+"value": "Iran",
+"rank": 3
+},
+{
+"name": "Location",
+"value": "Tehran (Iran)",
+"rank": 4
+}
+],
+"multimedia": {
+"caption": "Smoke rising from explosions in Tehran on Sunday after Israeli strikes.",
+"credit": "Arash Khamooshi for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/06/15/multimedia/15int-israel-iran-jtfv/15int-israel-iran-jtfv-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/06/15/multimedia/15int-israel-iran-jtfv/15int-israel-iran-jtfv-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Foreign",
+"print_page": "1",
+"print_section": "A",
+"pub_date": "2025-06-15T20:28:48Z",
+"section_name": "World",
+"snippet": "The path to diplomacy appeared to narrow after officials called off talks that had been set for Sunday between Tehran and Washington on Iran’s nuclear program.",
+"source": "The New York Times",
+"subsection_name": "Middle East",
+"type_of_material": "News",
+"uri": "nyt://article/e8bbb2e0-e5e5-528a-9078-7c4dcf24ea5a",
+"web_url": "https://www.nytimes.com/2025/06/15/world/middleeast/iran-israel-missile-strikes.html",
+"word_count": 733
+},
+{
+"abstract": "It may be time to rethink the tragic events in Washington and Boulder.",
+"byline": {
+"original": "By M. Gessen"
+},
+"document_type": "article",
+"headline": {
+"main": "The Attacks on Zohran Mamdani Show That We Need a New Understanding of Antisemitism",
+"kicker": "M. Gessen",
+"print_headline": "The Story of Antisemitism Needs to Be Rewritten"
+},
+"_id": "nyt://article/f74a1274-8f90-55f5-860a-82f3ebbdc2dc",
+"keywords": [
+{
+"name": "Subject",
+"value": "Anti-Semitism",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Jews and Judaism",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Freedom of Speech and Expression",
+"rank": 3
+},
+{
+"name": "Person",
+"value": "Mamdani, Zohran",
+"rank": 4
+},
+{
+"name": "Person",
+"value": "Davidai, Shai",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "Israel-Gaza War (2023- )",
+"rank": 6
+},
+{
+"name": "Subject",
+"value": "Terrorism",
+"rank": 7
+},
+{
+"name": "Subject",
+"value": "Elections, Mayors",
+"rank": 8
+},
+{
+"name": "Location",
+"value": "New York City",
+"rank": 9
+}
+],
+"multimedia": {
+"caption": "",
+"credit": "Mark Makela/Reuters",
+"default": {
+"url": "https://static01.nyt.com/images/2025/06/27/multimedia/24gessenNEW-chgq/24gessenNEW-chgq-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/06/27/multimedia/24gessenNEW-chgq/24gessenNEW-chgq-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "OpEd",
+"print_page": "22",
+"print_section": "A",
+"pub_date": "2025-06-24T09:03:08Z",
+"section_name": "Opinion",
+"snippet": "It may be time to rethink the tragic events in Washington and Boulder.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "Op-Ed",
+"uri": "nyt://article/f74a1274-8f90-55f5-860a-82f3ebbdc2dc",
+"web_url": "https://www.nytimes.com/2025/06/24/opinion/antisemitism-new-york-city-mayor.html",
+"word_count": 2427
+},
+{
+"abstract": "The countries have long worried about being sucked into regional war as they juggle relations with Washington, their security guarantor, while seeking to improve ties with Tehran.",
+"byline": {
+"original": "By Vivian Nereim"
+},
+"document_type": "article",
+"headline": {
+"main": "Iran’s Attack on a U.S. Base in Qatar Is a Nightmare Come True for Gulf States",
+"kicker": "",
+"print_headline": "Iran’s Strike on U.S. Base In Qatar Has Gulf States Facing Their Worst Fears"
+},
+"_id": "nyt://article/56fa278a-6c29-5419-898d-f11bca7e51d1",
+"keywords": [
+{
+"name": "Location",
+"value": "Iran",
+"rank": 1
+},
+{
+"name": "Location",
+"value": "Qatar",
+"rank": 2
+},
+{
+"name": "Location",
+"value": "Persian Gulf",
+"rank": 3
+},
+{
+"name": "Location",
+"value": "Bahrain",
+"rank": 4
+},
+{
+"name": "Location",
+"value": "United Arab Emirates",
+"rank": 5
+},
+{
+"name": "Location",
+"value": "Saudi Arabia",
+"rank": 6
+},
+{
+"name": "Location",
+"value": "Kuwait",
+"rank": 7
+},
+{
+"name": "Location",
+"value": "Oman",
+"rank": 8
+},
+{
+"name": "Location",
+"value": "Al Udeid Air Base (Qatar)",
+"rank": 9
+},
+{
+"name": "Subject",
+"value": "United States Defense and Military Forces",
+"rank": 10
+},
+{
+"name": "Location",
+"value": "Doha (Qatar)",
+"rank": 11
+},
+{
+"name": "Subject",
+"value": "War and Armed Conflicts",
+"rank": 12
+},
+{
+"name": "Subject",
+"value": "Nuclear Weapons",
+"rank": 13
+},
+{
+"name": "Location",
+"value": "Middle East",
+"rank": 14
+},
+{
+"name": "Subject",
+"value": "Iran-Israel War (2025- )",
+"rank": 15
+},
+{
+"name": "Subject",
+"value": "Iran-Israel Proxy Conflict",
+"rank": 16
+},
+{
+"name": "Location",
+"value": "Israel",
+"rank": 17
+}
+],
+"multimedia": {
+"caption": "Iran fired missiles at an American military base in Doha, Qatar, on Monday, in response to U.S. strikes against Iranian nuclear sites.",
+"credit": "Karim Jaafar/Agence France-Presse — Getty Images",
+"default": {
+"url": "https://static01.nyt.com/images/2025/06/25/multimedia/25gulf-assess-3-vtzw/25gulf-assess-3-vtzw-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/06/25/multimedia/25gulf-assess-3-vtzw/25gulf-assess-3-vtzw-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Foreign",
+"print_page": "6",
+"print_section": "A",
+"pub_date": "2025-06-25T13:15:22Z",
+"section_name": "World",
+"snippet": "The countries have long worried about being sucked into regional war as they juggle relations with Washington, their security guarantor, while seeking to improve ties with Tehran.",
+"source": "The New York Times",
+"subsection_name": "Middle East",
+"type_of_material": "News",
+"uri": "nyt://article/56fa278a-6c29-5419-898d-f11bca7e51d1",
+"web_url": "https://www.nytimes.com/2025/06/25/world/middleeast/gulf-states-iran-attack-us-qatar-base.html",
+"word_count": 1058
+},
+{
+"abstract": "Also, a school shooting in Austria was among Europe’s worst. Here’s the latest at the end of Tuesday.",
+"byline": {
+"original": "By Matthew Cullen"
+},
+"document_type": "article",
+"headline": {
+"main": "Hegseth Defended Troop Deployment to Los Angeles",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/9c2e93a5-7afa-5742-ab06-f46a3356c723",
+"keywords": [],
+"multimedia": {
+"caption": "On a highway in downtown Los Angeles today.",
+"credit": "Philip Cheung for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/06/11/multimedia/10evening-LA/10evening-LA-articleLarge-v3.jpg",
+"height": 600,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/06/11/multimedia/10evening-LA/10evening-LA-thumbStandard-v3.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "NYTNow",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-06-10T22:11:30Z",
+"section_name": "Briefing",
+"snippet": "Also, a school shooting in Austria was among Europe’s worst. Here’s the latest at the end of Tuesday.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/9c2e93a5-7afa-5742-ab06-f46a3356c723",
+"web_url": "https://www.nytimes.com/2025/06/10/briefing/los-angeles-troops-white-house-musk-search.html",
+"word_count": 1298
+},
+{
+"abstract": "The shooting was one of several episodes of gun and knife violence in the city over the Fourth of July weekend.",
+"byline": {
+"original": "By Ali Watkins and Victor Mather"
+},
+"document_type": "article",
+"headline": {
+"main": "3 Killed and 9 Injured in South Philadelphia Shooting",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/a3c1590f-ad82-54f6-88e8-d4bc58839840",
+"keywords": [
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 1
+},
+{
+"name": "Location",
+"value": "Philadelphia (Pa)",
+"rank": 2
+}
+],
+"multimedia": {
+"caption": "After a shooting in the Grays Ferry neighborhood of South Philadelphia, on Monday morning.",
+"credit": "Alejandro A. Alvarez/The Philadelphia Inquirer, via Associated Press",
+"default": {
+"url": "https://static01.nyt.com/images/2025/07/07/multimedia/07xp-philly-czkj/07xp-philly-czkj-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/07/07/multimedia/07xp-philly-czkj/07xp-philly-czkj-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Express",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-07-07T14:31:03Z",
+"section_name": "U.S.",
+"snippet": "The shooting was one of several episodes of gun and knife violence in the city over the Fourth of July weekend.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/a3c1590f-ad82-54f6-88e8-d4bc58839840",
+"web_url": "https://www.nytimes.com/2025/07/07/us/philadelphia-mass-shooting-july-4.html",
+"word_count": 376
+},
+{
+"abstract": "The police said the gunman, who turned himself in, and the victims had “previously engaged in conflict over social media.” The shooting was captured on video.",
+"byline": {
+"original": "By Claire Moses and Christine Hauser"
+},
+"document_type": "article",
+"headline": {
+"main": "2 Killed in Shooting on Las Vegas Strip",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/fa57257c-ea4e-5e56-b867-cd677604880e",
+"keywords": [
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Social Media",
+"rank": 2
+},
+{
+"name": "Organization",
+"value": "Bellagio Resort and Casino",
+"rank": 3
+},
+{
+"name": "Location",
+"value": "Las Vegas (Nev)",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Video Recordings, Downloads and Streaming",
+"rank": 5
+}
+],
+"multimedia": {
+"caption": "The shooting happened around 10:40 p.m. local time near the Bellagio hotel, the police said.",
+"credit": "Madeline Carter/Las Vegas Review-Journal, via Associated Press",
+"default": {
+"url": "https://static01.nyt.com/images/2025/06/09/multimedia/09xp-vegasshooting-tlgf/09xp-vegasshooting-tlgf-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/06/09/multimedia/09xp-vegasshooting-tlgf/09xp-vegasshooting-tlgf-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Express",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-06-09T13:43:42Z",
+"section_name": "U.S.",
+"snippet": "The police said the gunman, who turned himself in, and the victims had “previously engaged in conflict over social media.” The shooting was captured on video.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/fa57257c-ea4e-5e56-b867-cd677604880e",
+"web_url": "https://www.nytimes.com/2025/06/09/us/las-vegas-shooting-youtube-feud.html",
+"word_count": 291
+},
+{
+"abstract": "The Justice Department charged Elias Rodriguez, of Chicago, with murder of foreign officials, first-degree murder and other crimes in the shooting deaths of two Israeli Embassy employees in Washington.",
+"byline": {
+"original": ""
+},
+"document_type": "interactive",
+"headline": {
+"main": "Read the F.B.I. Affidavit",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://interactive/f99f325f-3755-5cef-b9ff-90b8f1069277",
+"keywords": [],
+"multimedia": {
+"caption": "",
+"credit": "",
+"default": {
+"url": "https://static01.nyt.com/images/2025/05/22/doc-9e8a2cdd-34bc-48b3-ab96-b-promo/doc-9e8a2cdd-34bc-48b3-ab96-b-promo-articleLarge.png",
+"height": 776,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/05/22/doc-9e8a2cdd-34bc-48b3-ab96-b-promo/doc-9e8a2cdd-34bc-48b3-ab96-b-promo-thumbStandard.png",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-05-22T20:56:29Z",
+"section_name": "U.S.",
+"snippet": "The Justice Department charged Elias Rodriguez, of Chicago, with murder of foreign officials, first-degree murder and other crimes in the shooting deaths of two Israeli Embassy employees in Washington.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "Interactive Feature",
+"uri": "nyt://interactive/f99f325f-3755-5cef-b9ff-90b8f1069277",
+"web_url": "https://www.nytimes.com/interactive/2025/05/22/us/rodriguez-aff.html",
+"word_count": 0
+},
+{
+"abstract": "Gunfire from a passing car ripped into a crowd of partygoers in the River North neighborhood, the police said.",
+"byline": {
+"original": "By Mitch Smith, Julie Bosman and John Yoon"
+},
+"document_type": "article",
+"headline": {
+"main": "4 Dead and 14 Injured in Chicago Drive-By Shooting",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/ccec5810-06f8-541c-bf57-a6836b90e971",
+"keywords": [
+{
+"name": "Subject",
+"value": "Police",
+"rank": 1
+},
+{
+"name": "Organization",
+"value": "Police Department (Chicago, Ill)",
+"rank": 2
+},
+{
+"name": "Location",
+"value": "Chicago (Ill)",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Mass Shootings",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 5
+}
+],
+"multimedia": {
+"caption": "A worker washed blood from a Chicago sidewalk on Thursday after a drive-by shooting overnight left four people dead and 14 injured.",
+"credit": "Jim Vondruska for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/07/03/multimedia/03XP-CHICAGO-hkmz/03XP-CHICAGO-hkmz-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/07/03/multimedia/03XP-CHICAGO-hkmz/03XP-CHICAGO-hkmz-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-07-03T11:00:18Z",
+"section_name": "U.S.",
+"snippet": "Gunfire from a passing car ripped into a crowd of partygoers in the River North neighborhood, the police said.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/ccec5810-06f8-541c-bf57-a6836b90e971",
+"web_url": "https://www.nytimes.com/2025/07/03/us/chicago-shooting.html",
+"word_count": 1117
+},
+{
+"abstract": "The suspect came to the U.S. in 2022 and lived with his family in a suburban neighborhood. He was a ride share driver, and his daughter was embraced by her school community.",
+"byline": {
+"original": "By Soumya Karlamangla and Richard Fausset"
+},
+"document_type": "article",
+"headline": {
+"main": "Attack Suspect Appeared to Live a Low-Key Life in Colorado Springs",
+"kicker": "",
+"print_headline": "Suspected Attacker Kept a Low Profile in Colorado"
+},
+"_id": "nyt://article/9a75e42e-b0c5-5484-8683-7d06c15a1f0d",
+"keywords": [
+{
+"name": "Subject",
+"value": "Hate Crimes",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Anti-Semitism",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Terrorism",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Immigration and Emigration",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "Israel-Gaza War (2023- )",
+"rank": 6
+},
+{
+"name": "Person",
+"value": "Soliman, Mohamed Sabry",
+"rank": 7
+},
+{
+"name": "Location",
+"value": "Boulder (Colo)",
+"rank": 8
+},
+{
+"name": "Location",
+"value": "Colorado Springs (Colo)",
+"rank": 9
+}
+],
+"multimedia": {
+"caption": "Police officers near the Pearl Street Mall in Boulder, Colo., after the attack on a group of demonstrators supporting the Israeli hostages being held in Gaza.",
+"credit": "Michael Ciaglo for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/06/02/multimedia/02nat-attacker-investigation-mwqf/02nat-attacker-investigation-mwqf-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/06/02/multimedia/02nat-attacker-investigation-mwqf/02nat-attacker-investigation-mwqf-thumbStandard-v2.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "13",
+"print_section": "A",
+"pub_date": "2025-06-03T01:26:16Z",
+"section_name": "U.S.",
+"snippet": "The suspect came to the U.S. in 2022 and lived with his family in a suburban neighborhood. He was a ride share driver, and his daughter was embraced by her school community.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/9a75e42e-b0c5-5484-8683-7d06c15a1f0d",
+"web_url": "https://www.nytimes.com/2025/06/02/us/boulder-colorado-attack-suspect-life.html",
+"word_count": 1486
+},
+{
+"abstract": "The plan, the first large-scale attempt to address the impact of the 1921 atrocity, will raise private funds for housing assistance, scholarships and economic development.",
+"byline": {
+"original": "By Audra D. S. Burch and Breena Kerr"
+},
+"document_type": "article",
+"headline": {
+"main": "$105 Million Reparations Package for Tulsa Race Massacre Unveiled by Mayor",
+"kicker": "",
+"print_headline": "$105 Million Package to Repair What Tulsa Massacre Destroyed"
+},
+"_id": "nyt://article/dce39e86-2dee-50db-aa2c-8254e71786f4",
+"keywords": [
+{
+"name": "Subject",
+"value": "Tulsa Race Riot (1921)",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Reparations",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Black People",
+"rank": 3
+},
+{
+"name": "Location",
+"value": "Tulsa (Okla)",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Hate Crimes",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "Race and Ethnicity",
+"rank": 6
+},
+{
+"name": "Person",
+"value": "Nichols, Monroe IV (1983- )",
+"rank": 7
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 8
+}
+],
+"multimedia": {
+"caption": "Mayor Monroe Nichols of Tulsa announced the $105 million trust at a gathering Sunday commemorating the city’s first Tulsa Race Massacre Observance Day.",
+"credit": "Joey Johnson/Associated Press",
+"default": {
+"url": "https://static01.nyt.com/images/2025/06/01/multimedia/01nat-tulsa-reparations-top-zbcl/01nat-tulsa-reparations-top-zbcl-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/06/01/multimedia/01nat-tulsa-reparations-top-zbcl/01nat-tulsa-reparations-top-zbcl-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "1",
+"print_section": "A",
+"pub_date": "2025-06-01T20:45:06Z",
+"section_name": "U.S.",
+"snippet": "The plan, the first large-scale attempt to address the impact of the 1921 atrocity, will raise private funds for housing assistance, scholarships and economic development.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/dce39e86-2dee-50db-aa2c-8254e71786f4",
+"web_url": "https://www.nytimes.com/2025/06/01/us/tulsa-race-massacre-reparations.html",
+"word_count": 1073
+},
+{
+"abstract": "The suspect sought to use a drone, Molotov cocktails and armor-piercing ammunition to attack a base outside Detroit on Tuesday, the authorities said.",
+"byline": {
+"original": "By Neil Vigdor"
+},
+"document_type": "article",
+"headline": {
+"main": "Ex-National Guardsman Planned to Attack U.S. Army Base for ISIS, U.S. Says",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/076bda81-8d02-5bfc-a022-39f5d75b9385",
+"keywords": [
+{
+"name": "Subject",
+"value": "United States Defense and Military Forces",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Terrorism",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Military Bases and Installations",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Reserves (Military)",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Bombs and Explosives",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "Firearms",
+"rank": 6
+},
+{
+"name": "Subject",
+"value": "Muslims and Islam",
+"rank": 7
+},
+{
+"name": "Organization",
+"value": "Islamic State in Iraq and Syria (ISIS)",
+"rank": 8
+},
+{
+"name": "Organization",
+"value": "National Guard",
+"rank": 9
+},
+{
+"name": "Organization",
+"value": "Federal Bureau of Investigation",
+"rank": 10
+},
+{
+"name": "Organization",
+"value": "United States Army",
+"rank": 11
+},
+{
+"name": "Location",
+"value": "Michigan",
+"rank": 12
+},
+{
+"name": "Location",
+"value": "Warren (Mich)",
+"rank": 13
+},
+{
+"name": "Location",
+"value": "Dearborn (Mich)",
+"rank": 14
+}
+],
+"multimedia": {
+"caption": "The U.S. Army’s Tank-Automotive & Armaments Command in Warren, Mich., in 2005.",
+"credit": "Carlos Osorio/Associated Press",
+"default": {
+"url": "https://static01.nyt.com/images/2025/05/14/multimedia/14xp-isis-hmlc/14xp-isis-hmlc-articleLarge.jpg",
+"height": 411,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/05/14/multimedia/14xp-isis-hmlc/14xp-isis-hmlc-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Express",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-05-14T20:00:56Z",
+"section_name": "U.S.",
+"snippet": "The suspect sought to use a drone, Molotov cocktails and armor-piercing ammunition to attack a base outside Detroit on Tuesday, the authorities said.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/076bda81-8d02-5bfc-a022-39f5d75b9385",
+"web_url": "https://www.nytimes.com/2025/05/14/us/michigan-national-guard-isis-attack.html",
+"word_count": 921
+},
+{
+"abstract": "Law enforcement officials were looking for the suspect, who lived close to the bar in the town of Anaconda, the day after the shooting.",
+"byline": {
+"original": "By Jake Ellison, Nicholas Bogel-Burroughs and Alyce McFadden"
+},
+"document_type": "article",
+"headline": {
+"main": "Montana Gunman Remains at Large After 4 Killed at a Neighborhood Bar",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/ca17733c-f21a-519a-a416-67df05040d98",
+"keywords": [
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Fugitives",
+"rank": 2
+},
+{
+"name": "Location",
+"value": "Montana",
+"rank": 3
+},
+{
+"name": "Location",
+"value": "Anaconda (Mont)",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "live-detached",
+"rank": 5
+}
+],
+"multimedia": {
+"caption": "People outside the Owl Bar after the shooting on Friday.",
+"credit": "Janie Osborne for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/01/multimedia/01nat-montana-shooting-ptkz/01nat-montana-shooting-ptkz-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/01/multimedia/01nat-montana-shooting-ptkz/01nat-montana-shooting-ptkz-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-08-01T19:59:19Z",
+"section_name": "U.S.",
+"snippet": "Law enforcement officials were looking for the suspect, who lived close to the bar in the town of Anaconda, the day after the shooting.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/ca17733c-f21a-519a-a416-67df05040d98",
+"web_url": "https://www.nytimes.com/2025/08/01/us/montana-anaconda-shooting.html",
+"word_count": 729
+},
+{
+"abstract": "Officials urged residents to go about their weekend as the authorities searched the foothills for the veteran suspected of killing four people in the town of Anaconda.",
+"byline": {
+"original": "By Jake Ellison, Jim Robbins, Nicholas Bogel-Burroughs and Patricia Mazzei"
+},
+"document_type": "article",
+"headline": {
+"main": "After Montana Bar Shooting, a Manhunt Stretches On and a Cautious Town Mourns",
+"kicker": "",
+"print_headline": "Search Continues for Suspect in Montana Bar Shooting"
+},
+"_id": "nyt://article/1ee726c5-3978-5dc5-b183-7127728d524d",
+"keywords": [
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Fugitives",
+"rank": 2
+},
+{
+"name": "Location",
+"value": "Anaconda (Mont)",
+"rank": 3
+},
+{
+"name": "Location",
+"value": "Montana",
+"rank": 4
+}
+],
+"multimedia": {
+"caption": "On Saturday, the Owl Bar in Anaconda, Mont., was cordoned off with yellow police tape. Someone had placed two small bouquets of flowers against a lamp post outside.",
+"credit": "Janie Osborne for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/02/multimedia/02nat-montana-folo-qhkj/02nat-montana-folo-qhkj-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/02/multimedia/02nat-montana-folo-qhkj/02nat-montana-folo-qhkj-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "15",
+"print_section": "A",
+"pub_date": "2025-08-02T14:51:49Z",
+"section_name": "U.S.",
+"snippet": "Officials urged residents to go about their weekend as the authorities searched the foothills for the veteran suspected of killing four people in the town of Anaconda.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/1ee726c5-3978-5dc5-b183-7127728d524d",
+"web_url": "https://www.nytimes.com/2025/08/02/us/montana-search-suspect-anaconda-bar-shooting.html",
+"word_count": 743
+},
+{
+"abstract": "An Army veteran wanted in connection with the killing of four people at a bar in the town of Anaconda was taken into custody on Friday after an eight-day manhunt.",
+"byline": {
+"original": "By Alyce McFadden, Jake Ellison and Kylie Mohr"
+},
+"document_type": "article",
+"headline": {
+"main": "What We Know About the Montana Bar Shooting",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/c1b54e92-1d2a-5430-9d4c-20c57e178cf6",
+"keywords": [
+{
+"name": "Subject",
+"value": "Fugitives",
+"rank": 1
+},
+{
+"name": "Location",
+"value": "Anaconda (Mont)",
+"rank": 2
+},
+{
+"name": "Location",
+"value": "Montana",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 4
+},
+{
+"name": "Person",
+"value": "Kelly, Nancy Lauretta",
+"rank": 5
+},
+{
+"name": "Person",
+"value": "Baillie, Daniel Edwin",
+"rank": 6
+},
+{
+"name": "Person",
+"value": "Leach, David Allen",
+"rank": 7
+},
+{
+"name": "Person",
+"value": "Palm, Tony Wayne",
+"rank": 8
+},
+{
+"name": "Person",
+"value": "Knudsen, Austin",
+"rank": 9
+},
+{
+"name": "Person",
+"value": "Brown, Michael Paul (1979- )",
+"rank": 10
+}
+],
+"multimedia": {
+"caption": "The authorities identified Michael Brown, 45, as a suspect in a shooting that left four people dead at a bar in Montana on Friday morning.",
+"credit": "Janie Osborne for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/02/multimedia/00nat-montana-wwk-pgwt/00nat-montana-wwk-pgwt-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/02/multimedia/00nat-montana-wwk-pgwt/00nat-montana-wwk-pgwt-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-08-03T09:01:36Z",
+"section_name": "U.S.",
+"snippet": "An Army veteran wanted in connection with the killing of four people at a bar in the town of Anaconda was taken into custody on Friday after an eight-day manhunt.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/c1b54e92-1d2a-5430-9d4c-20c57e178cf6",
+"web_url": "https://www.nytimes.com/2025/08/03/us/montana-search-anaconda-bar-shooting.html",
+"word_count": 1193
+},
+{
+"abstract": "The man is accused of fatally shooting four people in a bar in Anaconda, Mont. He had led the police on an eight-day manhunt that rattled the community.",
+"byline": {
+"original": "By Orlando Mayorquín"
+},
+"document_type": "article",
+"headline": {
+"main": "Suspect in Montana Bar Shooting Faces 4 Murder Charges",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/dac4156c-c067-53ea-ba86-b3d163eb288e",
+"keywords": [
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Fugitives",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Bars and Nightclubs",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Veterans",
+"rank": 4
+},
+{
+"name": "Person",
+"value": "Brown, Michael Paul (1979- )",
+"rank": 5
+},
+{
+"name": "Location",
+"value": "Anaconda (Mont)",
+"rank": 6
+}
+],
+"multimedia": {
+"caption": "The shooting at the Owl Bar in Anaconda, Mont., had rattled the community.",
+"credit": "Janie Osborne for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/30/multimedia/00nat-montana-charges-gtkv/00nat-montana-charges-gtkv-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/30/multimedia/00nat-montana-charges-gtkv/00nat-montana-charges-gtkv-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-08-31T02:20:14Z",
+"section_name": "U.S.",
+"snippet": "The man is accused of fatally shooting four people in a bar in Anaconda, Mont. He had led the police on an eight-day manhunt that rattled the community.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/dac4156c-c067-53ea-ba86-b3d163eb288e",
+"web_url": "https://www.nytimes.com/2025/08/30/us/montana-bar-shooting.html",
+"word_count": 365
+},
+{
+"abstract": "The New York Times analyzed surveillance, police body-camera footage and bystander videos to understand what happened when an immigration agent shot and killed a motorist in a Chicago suburb.",
+"byline": {
+"original": "By Bora Erden, Devon Lum, Albert Sun, Hamed Aleaziz, Julie Bosman and Ainara Tiefenthäler"
+},
+"document_type": "interactive",
+"headline": {
+"main": "How an Attempted ICE Arrest Turned Deadly",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://interactive/c4e63ec2-8b07-538e-b6c7-e28fca697af6",
+"keywords": [
+{
+"name": "Organization",
+"value": "Immigration and Customs Enforcement (US)",
+"rank": 1
+},
+{
+"name": "Location",
+"value": "Chicago (Ill)",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Illegal Immigration",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Police Brutality, Misconduct and Shootings",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Deaths (Fatalities)",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "Federal Actions in US Cities",
+"rank": 6
+},
+{
+"name": "Person",
+"value": "Trump, Donald J",
+"rank": 7
+}
+],
+"multimedia": {
+"caption": "",
+"credit": "The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/09/20/multimedia/2025-09-16-ice-shooting-chicago-index/2025-09-16-ice-shooting-chicago-index-articleLarge-v6.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/09/20/multimedia/2025-09-16-ice-shooting-chicago-index/2025-09-16-ice-shooting-chicago-index-thumbStandard-v6.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Graphics",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-09-23T09:04:09Z",
+"section_name": "U.S.",
+"snippet": "The New York Times analyzed surveillance, police body-camera footage and bystander videos to understand what happened when an immigration agent shot and killed a motorist in a Chicago suburb.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "Interactive Feature",
+"uri": "nyt://interactive/c4e63ec2-8b07-538e-b6c7-e28fca697af6",
+"web_url": "https://www.nytimes.com/interactive/2025/09/23/us/ice-shooting-chicago-video.html",
+"word_count": 0
+},
+{
+"abstract": "Nine others were treated for injuries after the early-morning shooting in the Crown Heights neighborhood, the police said.",
+"byline": {
+"original": "By Maria Cramer, Chelsia Rose Marcius, Nate Schweber and Taylor Robinson"
+},
+"document_type": "article",
+"headline": {
+"main": "Gang-Related Attack Kills 3 in Shootout at a Brooklyn Bar",
+"kicker": "",
+"print_headline": "Three Killed and Nine Wounded During Shootout at Crown Heights Bar"
+},
+"_id": "nyt://article/ac8a5486-1941-53fb-af98-4d29665cb09b",
+"keywords": [
+{
+"name": "Subject",
+"value": "Bars and Nightclubs",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Restaurants",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 3
+},
+{
+"name": "Location",
+"value": "Crown Heights (Brooklyn, NY)",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Deaths (Fatalities)",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "Gangs",
+"rank": 6
+}
+],
+"multimedia": {
+"caption": "Officers responded to the site of a fatal shooting at Taste of the City Lounge, a bar and restaurant in the Crown Heights area of Brooklyn, on Sunday.",
+"credit": "Dakota Santiago for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/17/multimedia/17xp-brooklyn-khcm/17xp-brooklyn-khcm-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/17/multimedia/17xp-brooklyn-khcm/17xp-brooklyn-khcm-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Express",
+"print_page": "15",
+"print_section": "A",
+"pub_date": "2025-08-17T11:53:28Z",
+"section_name": "New York",
+"snippet": "Nine others were treated for injuries after the early-morning shooting in the Crown Heights neighborhood, the police said.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/ac8a5486-1941-53fb-af98-4d29665cb09b",
+"web_url": "https://www.nytimes.com/2025/08/17/nyregion/brooklyn-shooting-nightclub.html",
+"word_count": 1463
+},
+{
+"abstract": "The Sunday morning shootout at Taste of the City Lounge in Crown Heights happened after a gang-related dispute, the police said.",
+"byline": {
+"original": "By Maria Cramer"
+},
+"document_type": "article",
+"headline": {
+"main": "Two Gunmen in Attack at a Brooklyn Bar Were Among Those Killed",
+"kicker": "",
+"print_headline": "Two Gunmen and Patron Killed in Brooklyn Bar Attack"
+},
+"_id": "nyt://article/fdb00252-44bf-526f-a3d3-a26dbbf4f096",
+"keywords": [
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Fugitives",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Gangs",
+"rank": 3
+},
+{
+"name": "Location",
+"value": "Crown Heights (Brooklyn, NY)",
+"rank": 4
+},
+{
+"name": "Organization",
+"value": "Folk Nation (Gang)",
+"rank": 5
+}
+],
+"multimedia": {
+"caption": "Investigators took a body from the club on Sunday morning, hours after a shootout inside.",
+"credit": "Dakota Santiago for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/18/multimedia/18met-shooting-pzfm/18met-shooting-pzfm-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/18/multimedia/18met-shooting-pzfm/18met-shooting-pzfm-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Metro",
+"print_page": "16",
+"print_section": "A",
+"pub_date": "2025-08-18T16:37:54Z",
+"section_name": "New York",
+"snippet": "The Sunday morning shootout at Taste of the City Lounge in Crown Heights happened after a gang-related dispute, the police said.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/fdb00252-44bf-526f-a3d3-a26dbbf4f096",
+"web_url": "https://www.nytimes.com/2025/08/18/nyregion/brooklyn-lounge-shooting.html",
+"word_count": 381
+},
+{
+"abstract": "Footage showed bar patrons crawling for cover amid gang-related violence in August that killed three people. Elijah Roy, 25, is accused of assault in aid of racketeering.",
+"byline": {
+"original": "By Santul Nerkar"
+},
+"document_type": "article",
+"headline": {
+"main": "Man Charged After Mass Shooting at Brooklyn Bar That Was Caught on Video",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/c17c41a6-f24f-554b-9263-574ff14590d1",
+"keywords": [
+{
+"name": "Location",
+"value": "Crown Heights (Brooklyn, NY)",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Bars and Nightclubs",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Gangs",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Racketeering and Racketeers",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "Video Recordings, Downloads and Streaming",
+"rank": 6
+}
+],
+"multimedia": {
+"caption": "At least five guns were fired in the early morning mayhem at Taste of the City Lounge in Crown Heights in August, federal prosecutors said.",
+"credit": "Dakota Santiago for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/10/01/multimedia/01met-edny-shooting-jgmf/01met-edny-shooting-jgmf-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/10/01/multimedia/01met-edny-shooting-jgmf/01met-edny-shooting-jgmf-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Metro",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-10-01T22:11:03Z",
+"section_name": "New York",
+"snippet": "Footage showed bar patrons crawling for cover amid gang-related violence in August that killed three people. Elijah Roy, 25, is accused of assault in aid of racketeering.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/c17c41a6-f24f-554b-9263-574ff14590d1",
+"web_url": "https://www.nytimes.com/2025/10/01/nyregion/brooklyn-bar-shooting-charges.html",
+"word_count": 767
+},
+{
+"abstract": "Nicola Tanzi survived both attacks on the World Trade Center, his family said. On Tuesday at a subway station in Brooklyn, he was killed by a man he had apparently never seen before.",
+"byline": {
+"original": "By Chelsia Rose Marcius, Miles G. Cohen, Olivia Bensimon and Camille Baker"
+},
+"document_type": "article",
+"headline": {
+"main": "Man, 64, Is Fatally Beaten in a Subway Station After Chance Encounter",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/6f151ea6-0ddf-527e-8392-ae5e18c7f7ee",
+"keywords": [
+{
+"name": "Subject",
+"value": "Subways",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Assaults",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Deaths (Fatalities)",
+"rank": 4
+},
+{
+"name": "Location",
+"value": "Brooklyn (NYC)",
+"rank": 5
+},
+{
+"name": "Location",
+"value": "Downtown Brooklyn (Brooklyn, NY)",
+"rank": 6
+},
+{
+"name": "Person",
+"value": "Tanzi, Nicola",
+"rank": 7
+},
+{
+"name": "Person",
+"value": "Mazariegos, David",
+"rank": 8
+}
+],
+"multimedia": {
+"caption": "The fatal beating took place in the middle of the afternoon at a busy transit hub in Brooklyn.",
+"credit": "Dakota Santiago for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/10/09/multimedia/09met-subway-beating-flbj/09met-subway-beating-flbj-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/10/09/multimedia/09met-subway-beating-flbj/09met-subway-beating-flbj-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Metro",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-10-09T18:14:14Z",
+"section_name": "New York",
+"snippet": "Nicola Tanzi survived both attacks on the World Trade Center, his family said. On Tuesday at a subway station in Brooklyn, he was killed by a man he had apparently never seen before.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/6f151ea6-0ddf-527e-8392-ae5e18c7f7ee",
+"web_url": "https://www.nytimes.com/2025/10/09/nyregion/brooklyn-nyc-subway-attack-beating.html",
+"word_count": 960
+},
+{
+"abstract": "",
+"byline": {
+"original": "By Anushka Patil"
+},
+"document_type": "article",
+"headline": {
+"main": "The attack was the fourth deadly shooting in Minneapolis in just over 24 hours.",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/d103f1ac-bade-5636-b38b-2fab7714f08f",
+"keywords": [],
+"multimedia": {
+"caption": "The shooting at Annunciation Catholic Church on Wednesday was the fourth deadly shooting in Minneapolis in just over 24 hours.",
+"credit": "Liam James Doyle for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/27/multimedia/27minn-shooting-violent-24-hours-bqlw/27minn-shooting-violent-24-hours-bqlw-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/27/multimedia/27minn-shooting-violent-24-hours-bqlw/27minn-shooting-violent-24-hours-bqlw-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Express",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-08-27T17:25:53Z",
+"section_name": "U.S.",
+"snippet": "",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "Live Blog Post",
+"uri": "nyt://article/d103f1ac-bade-5636-b38b-2fab7714f08f",
+"web_url": "https://www.nytimes.com/live/2025/08/27/us/minneapolis-church-shooting/the-attack-was-the-fourth-deadly-shooting-in-minneapolis-in-just-over-24-hours",
+"word_count": 363
+},
+{
+"abstract": "Also, the C.D.C. director leaves. Here’s the latest at the end of Wednesday.",
+"byline": {
+"original": "By Whet Moser"
+},
+"document_type": "article",
+"headline": {
+"main": "Two killed in Minneapolis school shooting",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/a367332f-6ce9-540f-ad06-c64db0fff3fc",
+"keywords": [],
+"multimedia": {
+"caption": "",
+"credit": "Richard Tsong-Taatarii/Star Tribune, via Associated Press",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/27/multimedia/27evening-nl-minn-zjhf/27evening-nl-minn-zjhf-articleLarge.jpg",
+"height": 599,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/27/multimedia/27evening-nl-minn-zjhf/27evening-nl-minn-zjhf-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "NYTNow",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-08-27T22:02:58Z",
+"section_name": "Briefing",
+"snippet": "Also, the C.D.C. director leaves. Here’s the latest at the end of Wednesday.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/a367332f-6ce9-540f-ad06-c64db0fff3fc",
+"web_url": "https://www.nytimes.com/2025/08/27/briefing/minneapolis-cdc-covid.html",
+"word_count": 1216
+},
+{
+"abstract": "The shooting of children at a Roman Catholic church came after a string of violent confrontations, going back to George Floyd, that has left the Twin Cities reeling.",
+"byline": {
+"original": "By Julie Bosman"
+},
+"document_type": "article",
+"headline": {
+"main": "A Traumatized Minneapolis Confronts Another Tragedy",
+"kicker": "",
+"print_headline": "Minneapolis Suffers Another Heartbreaking Tragedy"
+},
+"_id": "nyt://article/ba25f7d3-d290-5838-8e01-1f3bdd91231e",
+"keywords": [
+{
+"name": "Subject",
+"value": "Minneapolis Catholic School Shooting (Aug 27, 2025)",
+"rank": 1
+},
+{
+"name": "Location",
+"value": "Minneapolis (Minn)",
+"rank": 2
+},
+{
+"name": "Organization",
+"value": "Annunciation Catholic Church (Minneapolis, Minn)",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Shootings of Minnesota Legislators (2025)",
+"rank": 4
+}
+],
+"multimedia": {
+"caption": "A parent ran toward Annunciation Catholic Church after the shooting in Minneapolis. ",
+"credit": "Richard Tsong-Taatarii/The Star Tribune, via Getty Images",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/27/us/27minn-shooting-minn-reaction-top/27minn-shooting-minn-reaction-top-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/27/us/27minn-shooting-minn-reaction-top/27minn-shooting-minn-reaction-top-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "16",
+"print_section": "A",
+"pub_date": "2025-08-27T22:41:50Z",
+"section_name": "U.S.",
+"snippet": "The shooting of children at a Roman Catholic church came after a string of violent confrontations, going back to George Floyd, that has left the Twin Cities reeling.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/ba25f7d3-d290-5838-8e01-1f3bdd91231e",
+"web_url": "https://www.nytimes.com/2025/08/27/us/minneapolis-shooting-reaction.html",
+"word_count": 953
+},
+{
+"abstract": "The shooter who attacked a Catholic school on Wednesday posted social media videos and writings that betrayed a litany of grievances and obsessions.",
+"byline": {
+"original": "By Talya Minsberg, Amy Harmon and Aric Toler"
+},
+"document_type": "article",
+"headline": {
+"main": "Minneapolis Suspect Knew Her Target, but Motive Is a Mystery",
+"kicker": "",
+"print_headline": "Shooting Suspect Knew Target, but Her Motive Is a Mystery"
+},
+"_id": "nyt://article/953695cc-5bd0-5a4b-8427-5081ff869859",
+"keywords": [
+{
+"name": "Subject",
+"value": "Minneapolis Catholic School Shooting (Aug 27, 2025)",
+"rank": 1
+},
+{
+"name": "Person",
+"value": "Westman, Robin (d 2025)",
+"rank": 2
+},
+{
+"name": "Organization",
+"value": "Annunciation Catholic Church (Minneapolis, Minn)",
+"rank": 3
+},
+{
+"name": "Location",
+"value": "Minneapolis (Minn)",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Transgender",
+"rank": 5
+}
+],
+"multimedia": {
+"caption": "The apartment complex where the suspected shooter is thought to have lived. ",
+"credit": "Ben Brewer/Reuters",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/27/multimedia/27minn-shooting-suspect1-cmbv/27minn-shooting-suspect1-cmbv-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/27/multimedia/27minn-shooting-suspect1-cmbv/27minn-shooting-suspect1-cmbv-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "16",
+"print_section": "A",
+"pub_date": "2025-08-27T23:51:23Z",
+"section_name": "U.S.",
+"snippet": "The shooter who attacked a Catholic school on Wednesday posted social media videos and writings that betrayed a litany of grievances and obsessions.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/953695cc-5bd0-5a4b-8427-5081ff869859",
+"web_url": "https://www.nytimes.com/2025/08/27/us/minneapolis-school-shooting-suspect-gunman.html",
+"word_count": 568
+},
+{
+"abstract": "Annunciation Catholic Church and School has been a neighborhood anchor in Minneapolis for more than a century.",
+"byline": {
+"original": "By Mitch Smith, Ruth Graham, Ann Hinga Klein and Dan Simmons"
+},
+"document_type": "article",
+"headline": {
+"main": "The Shattering of Wednesday Mass: Minnesota Parish Reels From Attack",
+"kicker": "",
+"print_headline": "Shattering of Catholic School Tradition as Close-Knit Parish Reels From a Shooting"
+},
+"_id": "nyt://article/01d8cf6c-d742-5d87-96d1-2319dc204506",
+"keywords": [
+{
+"name": "Subject",
+"value": "Minneapolis Catholic School Shooting (Aug 27, 2025)",
+"rank": 1
+},
+{
+"name": "Organization",
+"value": "Annunciation Catholic Church (Minneapolis, Minn)",
+"rank": 2
+},
+{
+"name": "Location",
+"value": "Minneapolis (Minn)",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Private and Sectarian Schools",
+"rank": 4
+}
+],
+"multimedia": {
+"caption": "Crosses, flowers and other mementos were placed outside Annunciation Catholic Church following the shooting in Minneapolis.",
+"credit": "Abbie Parr/Associated Press",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/28/multimedia/28NAT-MINN-CHURCH-top-mfvb/28NAT-MINN-CHURCH-top-mfvb-articleLarge-v2.jpg",
+"height": 600,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/28/multimedia/28NAT-MINN-CHURCH-top-mfvb/28NAT-MINN-CHURCH-top-mfvb-thumbStandard-v2.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "16",
+"print_section": "A",
+"pub_date": "2025-08-28T21:53:10Z",
+"section_name": "U.S.",
+"snippet": "Annunciation Catholic Church and School has been a neighborhood anchor in Minneapolis for more than a century.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/01d8cf6c-d742-5d87-96d1-2319dc204506",
+"web_url": "https://www.nytimes.com/2025/08/28/us/catholic-church-shooting.html",
+"word_count": 1096
+},
+{
+"abstract": "Activists are pointing to the attacker’s gender identity to falsely portray all transgender people as prone to mental illness and violence.",
+"byline": {
+"original": "By Amy Harmon"
+},
+"document_type": "article",
+"headline": {
+"main": "Conservatives Use Minneapolis Shooting in Anti-Transgender Campaigns",
+"kicker": "",
+"print_headline": "Right-Wing Activists Make Attack In Minnesota Part of Anti-Trans Push"
+},
+"_id": "nyt://article/a4611540-e41f-5031-9d4c-c573d1fb97f7",
+"keywords": [
+{
+"name": "Subject",
+"value": "Minneapolis Catholic School Shooting (Aug 27, 2025)",
+"rank": 1
+},
+{
+"name": "Person",
+"value": "Westman, Robin (d 2025)",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Transgender",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Rumors and Misinformation",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Discrimination",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "Right-Wing Extremism and Alt-Right",
+"rank": 6
+},
+{
+"name": "Subject",
+"value": "Conservatism (US Politics)",
+"rank": 7
+},
+{
+"name": "Subject",
+"value": "United States Politics and Government",
+"rank": 8
+},
+{
+"name": "Subject",
+"value": "live-detached",
+"rank": 9
+}
+],
+"multimedia": {
+"caption": "The attacker’s gender identity has become a focal point for politics.",
+"credit": "Liam James Doyle for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/28/multimedia/28minn-shooting-gender-politics-2/28NAT-MINN-CHURCH-tue-bqvj-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/28/multimedia/28minn-shooting-gender-politics-2/28NAT-MINN-CHURCH-tue-bqvj-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "15",
+"print_section": "A",
+"pub_date": "2025-08-29T18:40:19Z",
+"section_name": "U.S.",
+"snippet": "Activists are pointing to the attacker’s gender identity to falsely portray all transgender people as prone to mental illness and violence.",
+"source": "The New York Times",
+"subsection_name": "Politics",
+"type_of_material": "News",
+"uri": "nyt://article/a4611540-e41f-5031-9d4c-c573d1fb97f7",
+"web_url": "https://www.nytimes.com/2025/08/29/us/politics/minneapolis-shooting-anti-transgender-conservatives-robin-westman.html",
+"word_count": 957
+},
+{
+"abstract": "In the first Mass since an assailant attacked Annunciation Catholic Church, parishioners gathered to grieve and support one another.",
+"byline": {
+"original": "By Jeff Ernst and Soumya Karlamangla"
+},
+"document_type": "article",
+"headline": {
+"main": "‘A Future Filled With Hope’: Minneapolis Community Unites to Process the Tragedy",
+"kicker": "",
+"print_headline": "‘We Are in a Very Low Place’: A Shaken Community Unites in Grief"
+},
+"_id": "nyt://article/98035254-4979-5b42-824b-694d06dde1fd",
+"keywords": [
+{
+"name": "Location",
+"value": "Minneapolis (Minn)",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Churches (Buildings)",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "School Shootings and Armed Attacks",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Minneapolis Catholic School Shooting (Aug 27, 2025)",
+"rank": 4
+},
+{
+"name": "Person",
+"value": "Hebda, Bernard A",
+"rank": 5
+}
+],
+"multimedia": {
+"caption": "Flowers and signs are placed near Annunciation Catholic Church after Wednesday’s school shooting.",
+"credit": "Jenn Ackerman for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/30/multimedia/nat-minn-service-01-hbqg/nat-minn-service-01-hbqg-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/30/multimedia/nat-minn-service-01-hbqg/nat-minn-service-01-hbqg-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "18",
+"print_section": "A",
+"pub_date": "2025-08-31T01:58:02Z",
+"section_name": "U.S.",
+"snippet": "In the first Mass since an assailant attacked Annunciation Catholic Church, parishioners gathered to grieve and support one another.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/98035254-4979-5b42-824b-694d06dde1fd",
+"web_url": "https://www.nytimes.com/2025/08/30/us/minneapolis-catholic-church-shooting.html",
+"word_count": 935
+},
+{
+"abstract": "Investigators combing through piles of evidence from an attack on a Minneapolis church cautioned that these kinds of shooters often leave more questions than answers.",
+"byline": {
+"original": "By Ernesto Londoño"
+},
+"document_type": "article",
+"headline": {
+"main": "What Motivated the Minneapolis Church Shooter? We May Never Know.",
+"kicker": "",
+"print_headline": "Gunman’s Motive Is Obscure in Minneapolis Shooting"
+},
+"_id": "nyt://article/2a420bb5-e01f-5199-a65d-6cc72c79dc56",
+"keywords": [
+{
+"name": "Subject",
+"value": "Minneapolis Catholic School Shooting (Aug 27, 2025)",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "School Shootings and Armed Attacks",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Mass Shootings",
+"rank": 3
+},
+{
+"name": "Location",
+"value": "Minneapolis (Minn)",
+"rank": 4
+},
+{
+"name": "Person",
+"value": "Westman, Robin (d 2025)",
+"rank": 5
+}
+],
+"multimedia": {
+"caption": "Ben Rasmussen embraced his daughter, Jemma, at a vigil honoring the victims of the shooting at Annunciation Catholic Church in Minneapolis.",
+"credit": "Liam James Doyle for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/29/multimedia/nat-minnesota-motive-1-cfzh/nat-minnesota-motive-1-cfzh-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/29/multimedia/nat-minnesota-motive-1-cfzh/nat-minnesota-motive-1-cfzh-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "18",
+"print_section": "A",
+"pub_date": "2025-08-31T09:02:03Z",
+"section_name": "U.S.",
+"snippet": "Investigators combing through piles of evidence from an attack on a Minneapolis church cautioned that these kinds of shooters often leave more questions than answers.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/2a420bb5-e01f-5199-a65d-6cc72c79dc56",
+"web_url": "https://www.nytimes.com/2025/08/31/us/minneapolis-school-shooter-motive.html",
+"word_count": 1286
+},
+{
+"abstract": "Six weeks into the federal crackdown in Chicago, the attack on crime that the president promised hasn’t happened, and many in the city’s Black population haven’t been won over.",
+"byline": {
+"original": "By Clyde McGrady and Jamie Kelter Davis"
+},
+"document_type": "article",
+"headline": {
+"main": "Trump Said Black Chicagoans Wanted His ‘Blitz.’ Many Disagree.",
+"kicker": "",
+"print_headline": "Many Blacks in Chicago Are Wary of Trump ‘Blitz’"
+},
+"_id": "nyt://article/2bf4767e-21f7-570a-a19b-414d2f76ae23",
+"keywords": [
+{
+"name": "Location",
+"value": "Chicago (Ill)",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Black People",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Discrimination",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Police Brutality, Misconduct and Shootings",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Illegal Immigration",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "Crime and Criminals",
+"rank": 6
+},
+{
+"name": "Organization",
+"value": "Immigration and Customs Enforcement (US)",
+"rank": 7
+},
+{
+"name": "Person",
+"value": "Trump, Donald J",
+"rank": 8
+},
+{
+"name": "Subject",
+"value": "Federal Actions in US Cities",
+"rank": 9
+},
+{
+"name": "Subject",
+"value": "United States Politics and Government",
+"rank": 10
+}
+],
+"multimedia": {
+"caption": "“This level of attack is unsustainable for Chicagoans,” said Che “Rhymefest” Smith, a rapper and school board member who rejected President Trump’s notion that Black Chicagoans welcomed federal law enforcement.",
+"credit": "",
+"default": {
+"url": "https://static01.nyt.com/images/2025/10/22/multimedia/22nat-black-chicago-1-thkl/22nat-black-chicago-1-thkl-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/10/22/multimedia/22nat-black-chicago-1-thkl/22nat-black-chicago-1-thkl-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "17",
+"print_section": "A",
+"pub_date": "2025-10-22T19:06:56Z",
+"section_name": "U.S.",
+"snippet": "Six weeks into the federal crackdown in Chicago, the attack on crime that the president promised hasn’t happened, and many in the city’s Black population haven’t been won over.",
+"source": "The New York Times",
+"subsection_name": "Politics",
+"type_of_material": "News",
+"uri": "nyt://article/2bf4767e-21f7-570a-a19b-414d2f76ae23",
+"web_url": "https://www.nytimes.com/2025/10/22/us/politics/trump-black-chicago.html",
+"word_count": 1545
+},
+{
+"abstract": "The shooting happened at an unsanctioned after-party following the Hard Summer Music Festival, which featured electronic dance music.",
+"byline": {
+"original": "By Adeel Hassan"
+},
+"document_type": "article",
+"headline": {
+"main": "Shooting in Downtown Los Angeles Leaves 2 Dead and 6 Wounded, Police Say",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/2d4b7dda-6e07-5960-92d5-591a46fc7dbb",
+"keywords": [
+{
+"name": "Subject",
+"value": "Crime and Criminals",
+"rank": 1
+},
+{
+"name": "Location",
+"value": "Inglewood (Calif)",
+"rank": 2
+},
+{
+"name": "Organization",
+"value": "SoFi Stadium (Inglewood, Calif)",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Mass Shootings",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "Festivals",
+"rank": 6
+},
+{
+"name": "Subject",
+"value": "Deaths (Fatalities)",
+"rank": 7
+},
+{
+"name": "Location",
+"value": "Los Angeles (Calif)",
+"rank": 8
+}
+],
+"multimedia": {
+"caption": "Police officers at the scene of a shooting on Monday morning in the Warehouse District of Los Angeles. ",
+"credit": "KABC",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/04/multimedia/04xp-festival/04xp-festival-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/04/multimedia/04xp-festival/04xp-festival-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Express",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-08-04T16:13:39Z",
+"section_name": "U.S.",
+"snippet": "The shooting happened at an unsanctioned after-party following the Hard Summer Music Festival, which featured electronic dance music.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/2d4b7dda-6e07-5960-92d5-591a46fc7dbb",
+"web_url": "https://www.nytimes.com/2025/08/04/us/la-hard-summer-music-festival-shooting.html",
+"word_count": 291
+},
+{
+"abstract": "The suspect’s father said he was seeking a transfer from the Army base in Georgia, where he had complained of racism.",
+"byline": {
+"original": "By Eduardo Medina, Christine Hauser and Alessandro Marazzi Sassoon"
+},
+"document_type": "article",
+"headline": {
+"main": "A Sergeant Is Accused of Shooting 5 Soldiers in His Unit at Fort Stewart",
+"kicker": "",
+"print_headline": "5 Soldiers Wounded in Shooting at Georgia Base"
+},
+"_id": "nyt://article/7e469b98-42e2-585c-9047-8fb669028b6d",
+"keywords": [
+{
+"name": "Subject",
+"value": "Mass Shootings",
+"rank": 1
+},
+{
+"name": "Location",
+"value": "Fort Stewart (Ga)",
+"rank": 2
+},
+{
+"name": "Organization",
+"value": "United States Army",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Military Bases and Installations",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "United States Defense and Military Forces",
+"rank": 5
+}
+],
+"multimedia": {
+"caption": "Fort Stewart-Hunter Army Airfield in Georgia was locked down after reports of a shooting around 11 a.m. on Wednesday.",
+"credit": "Stephen Morton/Getty Images",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/06/multimedia/06xp-Fort-Stewart-zlmq/06xp-Fort-Stewart-zlmq-articleLarge.jpg",
+"height": 302,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/06/multimedia/06xp-Fort-Stewart-zlmq/06xp-Fort-Stewart-zlmq-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "13",
+"print_section": "A",
+"pub_date": "2025-08-06T16:33:46Z",
+"section_name": "U.S.",
+"snippet": "The suspect’s father said he was seeking a transfer from the Army base in Georgia, where he had complained of racism.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/7e469b98-42e2-585c-9047-8fb669028b6d",
+"web_url": "https://www.nytimes.com/2025/08/06/us/fort-stewart-airfield-active-shooter.html",
+"word_count": 920
+},
+{
+"abstract": "On and around Brown’s campus in Providence, terrified students rushed to safety as word of a gunman on campus spread.",
+"byline": {
+"original": "By Rylee Kirk, Mitch Smith, Alan Blinder and Ashley Ahn"
+},
+"document_type": "article",
+"headline": {
+"main": "A Typical Saturday Night Gives Way to Panic",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/1dbe9624-6095-5451-b3a6-48330fdbe7dd",
+"keywords": [],
+"multimedia": {
+"caption": "Police officers and emergency medical workers gathering in response to a shooting at Brown University in Providence, R.I., on Saturday.",
+"credit": "Jen Mcdermott/Associated Press",
+"default": {
+"url": "https://static01.nyt.com/images/2025/12/13/multimedia/13-witnesses-01-bqwp/13-witnesses-01-bqwp-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/12/13/multimedia/13-witnesses-01-bqwp/13-witnesses-01-bqwp-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-12-14T00:11:44Z",
+"section_name": "U.S.",
+"snippet": "On and around Brown’s campus in Providence, terrified students rushed to safety as word of a gunman on campus spread.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/1dbe9624-6095-5451-b3a6-48330fdbe7dd",
+"web_url": "https://www.nytimes.com/2025/12/13/us/brown-university-shooting-student-witness.html",
+"word_count": 515
+},
+{
+"abstract": "The killing of two college students brought an unwelcome and unusual spotlight to the mayor of Providence, R.I., a place where many residents know each other.",
+"byline": {
+"original": "By Mark Arsenault"
+},
+"document_type": "article",
+"headline": {
+"main": "A ‘Small Place’ Copes With Unimaginable Tragedy After Brown Shooting",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/676a9e05-4bfc-5977-b13e-3c41716ea263",
+"keywords": [
+{
+"name": "Subject",
+"value": "Colleges and Universities",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Mayors",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "School Shootings and Armed Attacks",
+"rank": 3
+},
+{
+"name": "Organization",
+"value": "Brown University",
+"rank": 4
+},
+{
+"name": "Organization",
+"value": "Station (West Warwick, RI, Nightclub)",
+"rank": 5
+},
+{
+"name": "Person",
+"value": "Smiley, Brett P",
+"rank": 6
+}
+],
+"multimedia": {
+"caption": "Hundreds of people gathered for a candlelight vigil at Lippitt Memorial Park in Providence, R.I., on Sunday night.",
+"credit": "Christopher Capozziello for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/12/14/multimedia/14brown-shooting-reporter-updates-vmpz/14brown-shooting-reporter-updates-vmpz-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/12/14/multimedia/14brown-shooting-reporter-updates-vmpz/14brown-shooting-reporter-updates-vmpz-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-12-15T02:41:35Z",
+"section_name": "U.S.",
+"snippet": "The killing of two college students brought an unwelcome and unusual spotlight to the mayor of Providence, R.I., a place where many residents know each other.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/676a9e05-4bfc-5977-b13e-3c41716ea263",
+"web_url": "https://www.nytimes.com/2025/12/14/us/brown-university-shooting-providence-mayor.html",
+"word_count": 624
+},
+{
+"abstract": "Hours after announcing they had detained a person in connection with the deadly shooting at Brown University, officials appealed to the public for new leads.",
+"byline": {
+"original": "By Ali Watkins"
+},
+"document_type": "article",
+"headline": {
+"main": "Officials Renew Search for Providence Shooter After Releasing Person of Interest",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/86a1613d-1ab6-5849-83ee-5725fdbdc8bf",
+"keywords": [
+{
+"name": "Subject",
+"value": "Colleges and Universities",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "School Shootings and Armed Attacks",
+"rank": 3
+},
+{
+"name": "Organization",
+"value": "Brown University",
+"rank": 4
+},
+{
+"name": "Person",
+"value": "Smiley, Brett P",
+"rank": 5
+},
+{
+"name": "Location",
+"value": "Providence (RI)",
+"rank": 6
+},
+{
+"name": "Subject",
+"value": "Brown University Shooting (Dec 13, 2025)",
+"rank": 7
+}
+],
+"multimedia": {
+"caption": "Mayor Brett Smiley of Providence speaking at Lippitt Memorial Park on Sunday during a candlelight vigil for the victims of a shooting at Brown University.",
+"credit": "Kylie Cooper/Reuters",
+"default": {
+"url": "https://static01.nyt.com/images/2025/12/15/multimedia/15brown-shooting-release-1-jvpt/15brown-shooting-release-1-jvpt-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/12/15/multimedia/15brown-shooting-release-1-jvpt/15brown-shooting-release-1-jvpt-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-12-15T10:57:28Z",
+"section_name": "U.S.",
+"snippet": "Hours after announcing they had detained a person in connection with the deadly shooting at Brown University, officials appealed to the public for new leads.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/86a1613d-1ab6-5849-83ee-5725fdbdc8bf",
+"web_url": "https://www.nytimes.com/2025/12/15/us/brown-university-shooting-suspect.html",
+"word_count": 310
+},
+{
+"abstract": "",
+"byline": {
+"original": "By Talya Minsberg"
+},
+"document_type": "article",
+"headline": {
+"main": "The shootings at Brown and in Sydney were a ‘gut punch’ for Providence’s Jewish community.",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/281f9d38-39dd-59be-af98-a810a9819f00",
+"keywords": [],
+"multimedia": {
+"caption": "Flowers left on the campus of Brown University. ",
+"credit": "Christopher Capozziello for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/12/15/multimedia/15brown-shooting-JCC-gvlb/15brown-shooting-JCC-gvlb-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/12/15/multimedia/15brown-shooting-JCC-gvlb/15brown-shooting-JCC-gvlb-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-12-15T21:44:23Z",
+"section_name": "U.S.",
+"snippet": "",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "Live Blog Post",
+"uri": "nyt://article/281f9d38-39dd-59be-af98-a810a9819f00",
+"web_url": "https://www.nytimes.com/live/2025/12/15/us/brown-shooting/the-shootings-at-brown-and-in-sydney-were-a-gut-punch-for-providences-jewish-community",
+"word_count": 260
+},
+{
+"abstract": "President Trump insists there are no more murders in Washington, D.C. “I wish that was true,” said Jamia Vaden, whose sister was gunned down in November.",
+"byline": {
+"original": "By Zolan Kanno-Youngs, Erica L. Green and Maansi Srivastava"
+},
+"document_type": "article",
+"headline": {
+"main": "Families of Murder Victims in Washington Say Trump Is Ignoring Them",
+"kicker": "",
+"print_headline": "Trump Says D.C. Is Free of Murder. Victims’ Families Feel Ignored."
+},
+"_id": "nyt://article/418895fe-5d30-5852-b538-b8b01508256e",
+"keywords": [
+{
+"name": "Subject",
+"value": "United States Politics and Government",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "US Federal Takeover of Metropolitan Police Dept (DC)",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Washington DC National Guard Shooting (Nov 2025)",
+"rank": 3
+},
+{
+"name": "Organization",
+"value": "National Guard",
+"rank": 4
+},
+{
+"name": "Location",
+"value": "Washington (DC)",
+"rank": 5
+},
+{
+"name": "Person",
+"value": "Trump, Donald J",
+"rank": 6
+},
+{
+"name": "Person",
+"value": "Beckstrom, Sarah (2005-25)",
+"rank": 7
+},
+{
+"name": "Person",
+"value": "Wolfe, Andrew (2001- )",
+"rank": 8
+},
+{
+"name": "Subject",
+"value": "Crime and Criminals",
+"rank": 9
+},
+{
+"name": "Subject",
+"value": "Black People",
+"rank": 10
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 11
+}
+],
+"multimedia": {
+"caption": "Davian Morgan holding photos of Tristan Johnson, his godson, who was killed in Washington last month.",
+"credit": "",
+"default": {
+"url": "https://static01.nyt.com/images/2025/12/19/us/politics/00dc-trump-murders/00dc-trump-murders-articleLarge.jpg",
+"height": 900,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/12/19/us/politics/00dc-trump-murders/00dc-trump-murders-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Washington",
+"print_page": "1",
+"print_section": "A",
+"pub_date": "2025-12-29T10:01:11Z",
+"section_name": "U.S.",
+"snippet": "President Trump insists there are no more murders in Washington, D.C. “I wish that was true,” said Jamia Vaden, whose sister was gunned down in November.",
+"source": "The New York Times",
+"subsection_name": "Politics",
+"type_of_material": "News",
+"uri": "nyt://article/418895fe-5d30-5852-b538-b8b01508256e",
+"web_url": "https://www.nytimes.com/2025/12/29/us/politics/families-of-murder-victims-in-washington-say-trump-is-ignoring-them.html",
+"word_count": 2093
+},
+{
+"abstract": "The episodes, which left the shooter dead, started with a traffic stop near an airport and ended at a church in Lexington, Ky., where four people were shot, the authorities said.",
+"byline": {
+"original": "By Alexandra E. Petri and Johnny Diaz"
+},
+"document_type": "article",
+"headline": {
+"main": "2 Dead and State Trooper Is Wounded in Kentucky Shootings, Officials Say",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/c21837db-e45d-59c0-b419-c8961dbb3ca3",
+"keywords": [
+{
+"name": "Subject",
+"value": "Mass Shootings",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Attacks on Police",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Baptist Churches",
+"rank": 3
+},
+{
+"name": "Organization",
+"value": "Richmond Road Baptist Church",
+"rank": 4
+},
+{
+"name": "Location",
+"value": "Lexington (Ky)",
+"rank": 5
+},
+{
+"name": "Location",
+"value": "Kentucky",
+"rank": 6
+}
+],
+"multimedia": {
+"caption": "Four people were shot, two fatally, on the grounds of the Richmond Road Baptist Church in Lexington, Ky., on Sunday, officials said.",
+"credit": "Michael Swensen/Getty Images",
+"default": {
+"url": "https://static01.nyt.com/images/2025/07/13/multimedia/13xp-shooting-pvft/13xp-shooting-pvft-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/07/13/multimedia/13xp-shooting-pvft/13xp-shooting-pvft-thumbStandard-v2.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Express",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-07-13T18:45:12Z",
+"section_name": "U.S.",
+"snippet": "The episodes, which left the shooter dead, started with a traffic stop near an airport and ended at a church in Lexington, Ky., where four people were shot, the authorities said.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/c21837db-e45d-59c0-b419-c8961dbb3ca3",
+"web_url": "https://www.nytimes.com/2025/07/13/us/kentucky-shooting-church-state-trooper.html",
+"word_count": 528
+},
+{
+"abstract": "The streets of a Bronx neighborhood filled with mourners who had gathered for the funeral of Didarul Islam, one of the victims of this week’s mass shooting in Manhattan.",
+"byline": {
+"original": "By Sarah Maslin Nir and The New York Times"
+},
+"document_type": "article",
+"headline": {
+"main": "Final Salute to a Fallen Officer: Images of Loss and Remembrance",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/db49e962-fc25-501f-9e2c-3a18f06ffb0c",
+"keywords": [
+{
+"name": "Subject",
+"value": "Midtown Manhattan Shooting (July 2025)",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Attacks on Police",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Police",
+"rank": 3
+},
+{
+"name": "Person",
+"value": "Islam, Didarul (1998-2025)",
+"rank": 4
+}
+],
+"multimedia": {
+"caption": "",
+"credit": "Amir Hamja for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/07/31/multimedia/met-officer-photos-newtop-01-jgzh/met-officer-photos-newtop-01-jgzh-articleLarge.jpg",
+"height": 391,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/07/31/multimedia/met-officer-photos-newtop-01-jgzh/met-officer-photos-newtop-01-jgzh-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Metro",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-07-31T22:08:30Z",
+"section_name": "New York",
+"snippet": "The streets of a Bronx neighborhood filled with mourners who had gathered for the funeral of Didarul Islam, one of the victims of this week’s mass shooting in Manhattan.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/db49e962-fc25-501f-9e2c-3a18f06ffb0c",
+"web_url": "https://www.nytimes.com/2025/07/31/nyregion/officer-funeral-new-york-shooting.html",
+"word_count": 389
+},
+{
+"abstract": "The boy, Angel Mendoza, died of his injuries on Tuesday after being attacked by a group of teenagers, the police and witnesses said. A 17-year-old was wounded.",
+"byline": {
+"original": "By Maia Coleman and Miles G. Cohen"
+},
+"document_type": "article",
+"headline": {
+"main": "Boy, 14, Fatally Stabbed in Bronx Park: ‘We Are Destroyed,’ Father Says",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/20588889-355b-5a45-a852-e0e4e493ddfa",
+"keywords": [
+{
+"name": "Subject",
+"value": "Assaults",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 2
+},
+{
+"name": "Location",
+"value": "Norwood (Bronx, NY)",
+"rank": 3
+},
+{
+"name": "Person",
+"value": "Angel Mendoza",
+"rank": 4
+}
+],
+"multimedia": {
+"caption": "On Tuesday evening, a group consisting mostly of teenagers got into a dispute inside a Bronx park that soon turned violent, the police said.",
+"credit": "Dakota Santiago for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/06/multimedia/06met-teen-stabbing-tzlw/06met-teen-stabbing-tzlw-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/06/multimedia/06met-teen-stabbing-tzlw/06met-teen-stabbing-tzlw-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Metro",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-08-06T18:09:58Z",
+"section_name": "New York",
+"snippet": "The boy, Angel Mendoza, died of his injuries on Tuesday after being attacked by a group of teenagers, the police and witnesses said. A 17-year-old was wounded.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/20588889-355b-5a45-a852-e0e4e493ddfa",
+"web_url": "https://www.nytimes.com/2025/08/06/nyregion/bronx-teen-stabbing-death.html",
+"word_count": 785
+},
+{
+"abstract": "The gunman fired at the headquarters of the Centers for Disease Control and Prevention because he blamed the Covid vaccine for his maladies, an official said.",
+"byline": {
+"original": "By Rick Rojas, Andy Newman, Sean Keenan, Apoorva Mandavilli and Hannah Ziegler"
+},
+"document_type": "article",
+"headline": {
+"main": "Suspect and Officer Are Dead After Shooting Outside C.D.C. in Atlanta",
+"kicker": "",
+"print_headline": "Suspect and Officer Die in Shooting at C.D.C."
+},
+"_id": "nyt://article/b5c12298-c8bc-5f7d-973a-44f5fa5c6c3f",
+"keywords": [
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Attacks on Police",
+"rank": 2
+},
+{
+"name": "Location",
+"value": "Atlanta (Ga)",
+"rank": 3
+},
+{
+"name": "Organization",
+"value": "Centers for Disease Control and Prevention",
+"rank": 4
+},
+{
+"name": "Organization",
+"value": "Emory University",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "Colleges and Universities",
+"rank": 6
+}
+],
+"multimedia": {
+"caption": "",
+"credit": "Elijah Nouvelage/Getty Images",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/08/multimedia/08emor7-homepage-tkzf/08emor7-homepage-tkzf-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/08/multimedia/08emor7-homepage-tkzf/08emor7-homepage-tkzf-thumbStandard-v2.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Express",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-08-08T21:48:46Z",
+"section_name": "U.S.",
+"snippet": "The gunman fired at the headquarters of the Centers for Disease Control and Prevention because he blamed the Covid vaccine for his maladies, an official said.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/b5c12298-c8bc-5f7d-973a-44f5fa5c6c3f",
+"web_url": "https://www.nytimes.com/2025/08/08/us/emory-university-cdc-shooting.html",
+"word_count": 1140
+},
+{
+"abstract": "A gunman who believed the Covid-19 vaccine had made him ill fired at the agency’s Atlanta offices, killing a police officer and rattling the public health community.",
+"byline": {
+"original": "By Alyce McFadden, Apoorva Mandavilli, Sean Keenan and Rick Rojas"
+},
+"document_type": "article",
+"headline": {
+"main": "What We Know About the C.D.C. Shooting in Atlanta",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/ee06f69f-0bf7-5b72-9ad3-765b1439142e",
+"keywords": [
+{
+"name": "Subject",
+"value": "Coronavirus (2019-nCoV)",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Vaccination and Immunization",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Rumors and Misinformation",
+"rank": 3
+},
+{
+"name": "Organization",
+"value": "Centers for Disease Control and Prevention",
+"rank": 4
+},
+{
+"name": "Person",
+"value": "Kennedy, Robert F Jr",
+"rank": 5
+},
+{
+"name": "Location",
+"value": "Atlanta (Ga)",
+"rank": 6
+}
+],
+"multimedia": {
+"caption": "A shooting on Friday at the Atlanta headquarters of the Centers for Disease Control and Prevention killed a police officer.",
+"credit": "Elijah Nouvelage/Getty Images",
+"default": {
+"url": "https://static01.nyt.com/images/2025/08/09/multimedia/00nat-cdc-shooting-wwk-03-hcfb/00nat-cdc-shooting-wwk-03-hcfb-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/08/09/multimedia/00nat-cdc-shooting-wwk-03-hcfb/00nat-cdc-shooting-wwk-03-hcfb-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-08-10T09:01:53Z",
+"section_name": "U.S.",
+"snippet": "A gunman who believed the Covid-19 vaccine had made him ill fired at the agency’s Atlanta offices, killing a police officer and rattling the public health community.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/ee06f69f-0bf7-5b72-9ad3-765b1439142e",
+"web_url": "https://www.nytimes.com/2025/08/10/us/cdc-shooting-atlanta.html",
+"word_count": 1078
+},
+{
+"abstract": "Three other people, including an 11-year-old boy, were wounded in the shooting on Saturday night, city officials said. It was unclear whether the police had made any arrests.",
+"byline": {
+"original": "By Chelsia Rose Marcius and Dakota Santiago"
+},
+"document_type": "article",
+"headline": {
+"main": "Boy, 10, and Woman, 21, Are Killed in Newark Shooting",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/5ecbaccb-f8b8-51e9-b740-1a782bed6009",
+"keywords": [
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 1
+},
+{
+"name": "Location",
+"value": "Newark (NJ)",
+"rank": 2
+}
+],
+"multimedia": {
+"caption": "Law enforcement officials at the scene of a shooting that left a 10-year-old boy and a 21-year-old woman dead and three others wounded, in Newark on Saturday night.",
+"credit": "Dakota Santiago for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/11/16/multimedia/16met-newark-shooting-phgk/16met-newark-shooting-phgk-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/11/16/multimedia/16met-newark-shooting-phgk/16met-newark-shooting-phgk-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Metro",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-11-16T19:45:43Z",
+"section_name": "New York",
+"snippet": "Three other people, including an 11-year-old boy, were wounded in the shooting on Saturday night, city officials said. It was unclear whether the police had made any arrests.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/5ecbaccb-f8b8-51e9-b740-1a782bed6009",
+"web_url": "https://www.nytimes.com/2025/11/16/nyregion/newark-shooting.html",
+"word_count": 482
+},
+{
+"abstract": "Seven people, ages 13 to 17 were shot at a downtown gathering by the Chicago Theatre. A second shooting left a man dead and another teenager in serious condition.",
+"byline": {
+"original": "By Francesca Regalado and Jonathan Wolfe"
+},
+"document_type": "article",
+"headline": {
+"main": "One Killed and 8 Teenagers Wounded in Chicago Shootings",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/a6a9e6ef-6779-543d-b430-2ab0ad19db26",
+"keywords": [
+{
+"name": "Location",
+"value": "Chicago (Ill)",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Demonstrations, Protests and Riots",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Mass Shootings",
+"rank": 3
+},
+{
+"name": "Organization",
+"value": "Police Department (Chicago, Ill)",
+"rank": 4
+}
+],
+"multimedia": {
+"caption": "Chicago police investigating the scene of a shooting outside the Chicago Theater on Friday.",
+"credit": "Tyler Pasciak Lariviere/Chicago Sun-Times, via Associated Press",
+"default": {
+"url": "https://static01.nyt.com/images/2025/11/22/multimedia/22xp-chicago-sub-lkmz/22xp-chicago-sub-lkmz-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/11/22/multimedia/22xp-chicago-sub-lkmz/22xp-chicago-sub-lkmz-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Express",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-11-22T14:34:01Z",
+"section_name": "U.S.",
+"snippet": "Seven people, ages 13 to 17 were shot at a downtown gathering by the Chicago Theatre. A second shooting left a man dead and another teenager in serious condition.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/a6a9e6ef-6779-543d-b430-2ab0ad19db26",
+"web_url": "https://www.nytimes.com/2025/11/22/us/chicago-state-street-shooting.html",
+"word_count": 382
+},
+{
+"abstract": "The Trump administration has claimed the police were slow to protect federal agents on Oct. 4, but videos and audio show that their rationale conflates hours of events involving a shooting, a protest, a car crash and a police radio call.",
+"byline": {
+"original": "By Devon Lum, Mattathias Schwartz, Christoph Koettl and Ainara Tiefenthäler"
+},
+"document_type": "article",
+"headline": {
+"main": "Times Analysis Finds Errors in Trump’s Supreme Court Filing That Calls for National Guard in Chicago",
+"kicker": "Visual Investigations",
+"print_headline": ""
+},
+"_id": "nyt://article/3adb6b3e-1547-57ec-927f-5c95e97851ce",
+"keywords": [
+{
+"name": "Subject",
+"value": "Illegal Immigration",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Federal Actions in US Cities",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Immigration and Emigration",
+"rank": 3
+},
+{
+"name": "Location",
+"value": "Chicago (Ill)",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "vis-video",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "your-feed-visual-investigations",
+"rank": 6
+},
+{
+"name": "Subject",
+"value": "Demonstrations, Protests and Riots",
+"rank": 7
+},
+{
+"name": "Organization",
+"value": "National Guard",
+"rank": 8
+},
+{
+"name": "Organization",
+"value": "Border Patrol (US)",
+"rank": 9
+},
+{
+"name": "Person",
+"value": "Trump, Donald J",
+"rank": 10
+}
+],
+"multimedia": {
+"caption": "",
+"credit": "",
+"default": {
+"url": "https://static01.nyt.com/images/2025/11/25/us/chicago_cbp_social-promo/chicago_cbp_social-promo-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/11/25/us/chicago_cbp_social-promo/chicago_cbp_social-promo-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Video",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-11-25T19:08:43Z",
+"section_name": "U.S.",
+"snippet": "The Trump administration has claimed the police were slow to protect federal agents on Oct. 4, but videos and audio show that their rationale conflates hours of events involving a shooting, a protest, a car crash and a police radio call.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/3adb6b3e-1547-57ec-927f-5c95e97851ce",
+"web_url": "https://www.nytimes.com/2025/11/25/us/trump-supreme-court-national-guard-chicago-errors.html",
+"word_count": 2256
+},
+{
+"abstract": "One National Guard member died and another was recovering after the attack near the White House on the eve of Thanksgiving. The suspect is a 29-year-old Afghan man.",
+"byline": {
+"original": "By Francesca Regalado, Jin Yu Young, Ali Watkins and Mark Walker"
+},
+"document_type": "article",
+"headline": {
+"main": "What We Know About the Shooting of National Guard Troops in Washington",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/ad8d34c3-5fe5-56d2-b5fe-0f4e7aed6223",
+"keywords": [
+{
+"name": "Subject",
+"value": "Washington DC National Guard Shooting (Nov 2025)",
+"rank": 1
+},
+{
+"name": "Location",
+"value": "Washington (DC)",
+"rank": 2
+},
+{
+"name": "Organization",
+"value": "National Guard",
+"rank": 3
+},
+{
+"name": "Person",
+"value": "Trump, Donald J",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "White House Building (Washington, DC)",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "Afghanistan War (2001- )",
+"rank": 6
+},
+{
+"name": "Person",
+"value": "Lakanwal, Rahmanullah",
+"rank": 7
+}
+],
+"multimedia": {
+"caption": "Two members of the National Guard were shot near the White House on the day before Thanksgiving.",
+"credit": "Eric Lee for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/11/27/multimedia/27dcshooting-wwk--pghq/27dcshooting-wwk--pghq-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/11/27/multimedia/27dcshooting-wwk--pghq/27dcshooting-wwk--pghq-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Express",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-11-27T04:26:19Z",
+"section_name": "U.S.",
+"snippet": "One National Guard member died and another was recovering after the attack near the White House on the eve of Thanksgiving. The suspect is a 29-year-old Afghan man.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/ad8d34c3-5fe5-56d2-b5fe-0f4e7aed6223",
+"web_url": "https://www.nytimes.com/2025/11/26/us/national-guard-dc-shooting-suspect.html",
+"word_count": 878
+},
+{
+"abstract": "Officials said the man had driven across the country to carry out the attack, which left two National Guard troops critically hurt.",
+"byline": {
+"original": "By Soumya Karlamangla and Nicholas Bogel-Burroughs"
+},
+"document_type": "article",
+"headline": {
+"main": "Shooting Suspect Is Afghan Man Who Lived in Washington State, Official Says",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/f2ca907e-1b6d-5c1a-86dc-85fcd703fcc3",
+"keywords": [
+{
+"name": "Person",
+"value": "Lakanwal, Rahmanullah",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Washington DC National Guard Shooting (Nov 2025)",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "United States Politics and Government",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Refugees and Displaced Persons",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 5
+},
+{
+"name": "Organization",
+"value": "State Department",
+"rank": 6
+},
+{
+"name": "Organization",
+"value": "World Relief",
+"rank": 7
+},
+{
+"name": "Person",
+"value": "Trump, Donald J",
+"rank": 8
+},
+{
+"name": "Location",
+"value": "Bellingham (Wash)",
+"rank": 9
+},
+{
+"name": "Location",
+"value": "Washington (State)",
+"rank": 10
+}
+],
+"multimedia": {
+"caption": "A photograph of Rahmanullah Lakanwal, right, was displayed next to the two victims at a news conference.",
+"credit": "Eric Lee for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/11/27/multimedia/27dc-shooting-suspect-gmct/27dc-shooting-suspect-gmct-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/11/27/multimedia/27dc-shooting-suspect-gmct/27dc-shooting-suspect-gmct-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-11-27T14:53:02Z",
+"section_name": "U.S.",
+"snippet": "Officials said the man had driven across the country to carry out the attack, which left two National Guard troops critically hurt.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/f2ca907e-1b6d-5c1a-86dc-85fcd703fcc3",
+"web_url": "https://www.nytimes.com/2025/11/27/us/shooting-afghanistan-refugees-washington.html",
+"word_count": 607
+},
+{
+"abstract": "The National Guard members shot in Washington are the latest victims of a political violence permeating our society.",
+"byline": {
+"original": "By The Editorial Board"
+},
+"document_type": "article",
+"headline": {
+"main": "The Uniquely American Heartbreak of Yet Another Tragedy",
+"kicker": "The Editorial Board",
+"print_headline": "The Uniquely American Heartbreak  of Yet Another Tragedy"
+},
+"_id": "nyt://article/409c4391-3a84-5886-87d5-6bcb01e44096",
+"keywords": [
+{
+"name": "Subject",
+"value": "United States Defense and Military Forces",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "United States Politics and Government",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "US Federal Takeover of Metropolitan Police Dept (DC)",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Washington DC National Guard Shooting (Nov 2025)",
+"rank": 4
+},
+{
+"name": "Organization",
+"value": "National Guard",
+"rank": 5
+},
+{
+"name": "Location",
+"value": "Washington (DC)",
+"rank": 6
+}
+],
+"multimedia": {
+"caption": "",
+"credit": "Mark Schiefelbein/Associated Press",
+"default": {
+"url": "https://static01.nyt.com/images/2025/11/29/multimedia/27nationalguard-editorial-1-mfkz/27nationalguard-editorial-1-mfkz-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/11/29/multimedia/27nationalguard-editorial-1-mfkz/27nationalguard-editorial-1-mfkz-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "OpEd",
+"print_page": "18",
+"print_section": "A",
+"pub_date": "2025-11-27T22:35:56Z",
+"section_name": "Opinion",
+"snippet": "The National Guard members shot in Washington are the latest victims of a political violence permeating our society.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "Editorial",
+"uri": "nyt://article/409c4391-3a84-5886-87d5-6bcb01e44096",
+"web_url": "https://www.nytimes.com/2025/11/27/opinion/national-guard-shot-dc.html",
+"word_count": 575
+},
+{
+"abstract": "Specialist Sarah Beckstrom, who died on Thursday, was not initially excited to go to Washington, but had grown to enjoy the city. Staff Sgt. Andrew Wolfe remained in critical condition on Friday.",
+"byline": {
+"original": "By Mark Arsenault, Christina Morales and Bernard Mokam"
+},
+"document_type": "article",
+"headline": {
+"main": "‘My Baby Girl Has Passed to Glory,’ Says Father of Guard Soldier Killed in D.C. Shooting",
+"kicker": "",
+"print_headline": "National Guard Soldier Killed in D.C. Attack Valued Faith and Family"
+},
+"_id": "nyt://article/fc5d171a-54f0-5c37-9347-702a366dfc28",
+"keywords": [
+{
+"name": "Person",
+"value": "Beckstrom, Sarah (2005-25)",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Washington DC National Guard Shooting (Nov 2025)",
+"rank": 2
+},
+{
+"name": "Organization",
+"value": "National Guard",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Attacks on Police",
+"rank": 4
+},
+{
+"name": "Person",
+"value": "Wolfe, Andrew (2001- )",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "US Federal Takeover of Metropolitan Police Dept (DC)",
+"rank": 6
+},
+{
+"name": "Person",
+"value": "Lakanwal, Rahmanullah",
+"rank": 7
+},
+{
+"name": "Location",
+"value": "Washington (DC)",
+"rank": 8
+},
+{
+"name": "Subject",
+"value": "United States Politics and Government",
+"rank": 9
+},
+{
+"name": "Person",
+"value": "Trump, Donald J",
+"rank": 10
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 11
+}
+],
+"multimedia": {
+"caption": "A small memorial at the site of the shooting of two National Guard members in Washington, on Thursday.",
+"credit": "Eric Lee for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/11/27/multimedia/27nat-troops2-cvgh/27nat-troops2-cvgh-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/11/27/multimedia/27nat-troops2-cvgh/27nat-troops2-cvgh-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "16",
+"print_section": "A",
+"pub_date": "2025-11-28T17:50:25Z",
+"section_name": "U.S.",
+"snippet": "Specialist Sarah Beckstrom, who died on Thursday, was not initially excited to go to Washington, but had grown to enjoy the city. Staff Sgt. Andrew Wolfe remained in critical condition on Friday.",
+"source": "The New York Times",
+"subsection_name": "Politics",
+"type_of_material": "News",
+"uri": "nyt://article/fc5d171a-54f0-5c37-9347-702a366dfc28",
+"web_url": "https://www.nytimes.com/2025/11/28/us/politics/dc-shooting-victims-beckstrom-wolfe.html",
+"word_count": 1266
+},
+{
+"abstract": "Red ribbons adorned one city, while blue ribbons hung in another town — all to honor the National Guard members who were attacked in Washington this week.",
+"byline": {
+"original": "By Bernard Mokam, Kevin Williams and Jack Healy"
+},
+"document_type": "article",
+"headline": {
+"main": "Two West Virginia Communities Bound Together by Grief",
+"kicker": "",
+"print_headline": "Two West Virginia Communities Bound Together by Grief"
+},
+"_id": "nyt://article/3e8c9cf8-9835-5a68-ad1b-cb778894ac05",
+"keywords": [
+{
+"name": "Subject",
+"value": "Washington DC National Guard Shooting (Nov 2025)",
+"rank": 1
+},
+{
+"name": "Organization",
+"value": "National Guard",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Attacks on Police",
+"rank": 3
+},
+{
+"name": "Person",
+"value": "Beckstrom, Sarah (2005-25)",
+"rank": 4
+},
+{
+"name": "Person",
+"value": "Wolfe, Andrew (2001- )",
+"rank": 5
+},
+{
+"name": "Location",
+"value": "Martinsburg (W Va)",
+"rank": 6
+},
+{
+"name": "Location",
+"value": "Webster Springs (W Va)",
+"rank": 7
+},
+{
+"name": "Location",
+"value": "West Virginia",
+"rank": 8
+},
+{
+"name": "Subject",
+"value": "United States Defense and Military Forces",
+"rank": 9
+},
+{
+"name": "Subject",
+"value": "Content Type: Personal Profile",
+"rank": 10
+}
+],
+"multimedia": {
+"caption": "A vigil was held on Friday for Specialist Sarah Beckstrom in Webster Springs, W.Va. Specialist Beckstrom died in a shooting while she was on duty in Washington, D.C.",
+"credit": "Christopher Jackson for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/11/28/multimedia/28nat-shooting-vigil-kjcz/28nat-shooting-vigil-kjcz-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/11/28/multimedia/28nat-shooting-vigil-kjcz/28nat-shooting-vigil-kjcz-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "16",
+"print_section": "A",
+"pub_date": "2025-11-29T02:05:02Z",
+"section_name": "U.S.",
+"snippet": "Red ribbons adorned one city, while blue ribbons hung in another town — all to honor the National Guard members who were attacked in Washington this week.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/3e8c9cf8-9835-5a68-ad1b-cb778894ac05",
+"web_url": "https://www.nytimes.com/2025/11/28/us/national-guard-shooting-west-virginia.html",
+"word_count": 851
+},
+{
+"abstract": "Former officials said the C.I.A. diligently assessed those who partnered with its forces, like the man accused of shooting two National Guard members in Washington.",
+"byline": {
+"original": "By Julian E. Barnes and Hamed Aleaziz"
+},
+"document_type": "article",
+"headline": {
+"main": "Afghans Who Assisted U.S. During the War Underwent Rigorous Vetting",
+"kicker": "",
+"print_headline": "Afghans Who Assisted U.S.  Underwent Rigorous Vetting"
+},
+"_id": "nyt://article/d724a503-c6a7-555c-8c11-fc824a90b8de",
+"keywords": [
+{
+"name": "Subject",
+"value": "Afghanistan War (2001- )",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Asylum, Right of",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Refugees and Displaced Persons",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Immigration and Emigration",
+"rank": 4
+},
+{
+"name": "Person",
+"value": "Lakanwal, Rahmanullah",
+"rank": 5
+},
+{
+"name": "Subject",
+"value": "Washington DC National Guard Shooting (Nov 2025)",
+"rank": 6
+},
+{
+"name": "Organization",
+"value": "National Guard",
+"rank": 7
+},
+{
+"name": "Subject",
+"value": "Espionage and Intelligence Services",
+"rank": 8
+},
+{
+"name": "Organization",
+"value": "Central Intelligence Agency",
+"rank": 9
+},
+{
+"name": "Subject",
+"value": "United States Defense and Military Forces",
+"rank": 10
+},
+{
+"name": "Subject",
+"value": "United States Politics and Government",
+"rank": 11
+},
+{
+"name": "Person",
+"value": "Ratcliffe, John Lee (1965- )",
+"rank": 12
+},
+{
+"name": "Location",
+"value": "Afghanistan",
+"rank": 13
+}
+],
+"multimedia": {
+"caption": "John Ratcliffe, the C.I.A. director, said the man accused of shooting two National Guard members, an Afghan who had worked with U.S. forces during the war in his country, “should have never been allowed to come here.” ",
+"credit": "Haiyun Jiang/The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/11/29/multimedia/29dc-intel-ratcliffe-bvzf/29dc-intel-ratcliffe-bvzf-articleLarge.jpg",
+"height": 900,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/11/29/multimedia/29dc-intel-ratcliffe-bvzf/29dc-intel-ratcliffe-bvzf-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Washington",
+"print_page": "12",
+"print_section": "A",
+"pub_date": "2025-11-29T21:34:11Z",
+"section_name": "U.S.",
+"snippet": "Former officials said the C.I.A. diligently assessed those who partnered with its forces, like the man accused of shooting two National Guard members in Washington.",
+"source": "The New York Times",
+"subsection_name": "Politics",
+"type_of_material": "News",
+"uri": "nyt://article/d724a503-c6a7-555c-8c11-fc824a90b8de",
+"web_url": "https://www.nytimes.com/2025/11/29/us/politics/afghans-cia-vetting.html",
+"word_count": 477
+},
+{
+"abstract": "Readers discuss the shooting of two National Guard members in Washington. Also: Being Latino in the U.S.; wonderful mentors.",
+"byline": {
+"original": ""
+},
+"document_type": "article",
+"headline": {
+"main": "The Aftermath of the D.C. Shooting",
+"kicker": "letters",
+"print_headline": "The Aftermath of the D.C. Shooting"
+},
+"_id": "nyt://article/d851a978-cd69-5c75-817c-86f7e35f6cbb",
+"keywords": [
+{
+"name": "Subject",
+"value": "Washington DC National Guard Shooting (Nov 2025)",
+"rank": 1
+},
+{
+"name": "Person",
+"value": "Trump, Donald J",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "United States Politics and Government",
+"rank": 3
+},
+{
+"name": "Subject",
+"value": "Deportation",
+"rank": 4
+},
+{
+"name": "Organization",
+"value": "National Guard",
+"rank": 5
+},
+{
+"name": "Location",
+"value": "Afghanistan",
+"rank": 6
+},
+{
+"name": "Subject",
+"value": "Asylum, Right of",
+"rank": 7
+},
+{
+"name": "Subject",
+"value": "Hispanic-Americans",
+"rank": 8
+},
+{
+"name": "Subject",
+"value": "Mentors",
+"rank": 9
+},
+{
+"name": "Subject",
+"value": "Afghanistan War (2001- )",
+"rank": 10
+}
+],
+"multimedia": {
+"caption": "U.S. Customs and Border Protection agents check migrants’ documents at the Paso del Norte International Bridge in El Paso in January.",
+"credit": "Paul Ratje for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/11/28/multimedia/28dc-asylum-zqjp/28dc-asylum-zqjp-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/11/28/multimedia/28dc-asylum-zqjp/28dc-asylum-zqjp-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Letters",
+"print_page": "23",
+"print_section": "A",
+"pub_date": "2025-12-01T18:43:44Z",
+"section_name": "Opinion",
+"snippet": "Readers discuss the shooting of two National Guard members in Washington. Also: Being Latino in the U.S.; wonderful mentors.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "Letter",
+"uri": "nyt://article/d851a978-cd69-5c75-817c-86f7e35f6cbb",
+"web_url": "https://www.nytimes.com/2025/12/01/opinion/national-guard-dc-shooting.html",
+"word_count": 743
+},
+{
+"abstract": "An aged helicopter fleet and inexperienced pilots from nearby Fort Belvoir had raised “widespread concern” among local pilots before a midair collision killed 67 people.",
+"byline": {
+"original": "By Kate Kelly"
+},
+"document_type": "article",
+"headline": {
+"main": "How the Army Caused Alarm in the Washington Skies Years Before a Fatal Crash",
+"kicker": "",
+"print_headline": "Lethal Recipe:  Older Copters,  Inexpert Pilots "
+},
+"_id": "nyt://article/9db22998-c6f9-5e80-af39-26dcf59a42fa",
+"keywords": [
+{
+"name": "Subject",
+"value": "Aviation Accidents, Safety and Disasters",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Helicopters",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Air Traffic Control",
+"rank": 3
+},
+{
+"name": "Organization",
+"value": "United States Army",
+"rank": 4
+},
+{
+"name": "Organization",
+"value": "Belvoir",
+"rank": 5
+},
+{
+"name": "Organization",
+"value": "Federal Aviation Administration",
+"rank": 6
+},
+{
+"name": "Person",
+"value": "Lobach, Rebecca M (1996-2025)",
+"rank": 7
+},
+{
+"name": "Location",
+"value": "Fort Rucker (Ala)",
+"rank": 8
+},
+{
+"name": "Subject",
+"value": "United States Defense and Military Forces",
+"rank": 9
+},
+{
+"name": "Subject",
+"value": "Pilots",
+"rank": 10
+},
+{
+"name": "Subject",
+"value": "Military Aircraft",
+"rank": 11
+},
+{
+"name": "Subject",
+"value": "American Airlines Flight 5342",
+"rank": 12
+},
+{
+"name": "Subject",
+"value": "United States Politics and Government",
+"rank": 13
+},
+{
+"name": "Subject",
+"value": "Military Bases and Installations",
+"rank": 14
+},
+{
+"name": "Organization",
+"value": "National Transportation Safety Board",
+"rank": 15
+},
+{
+"name": "Organization",
+"value": "Reagan, Ronald, Washington National Airport",
+"rank": 16
+}
+],
+"multimedia": {
+"caption": "Helicopter helmets and a model of a Black Hawk helicopter on display in the home of Austin Roth, who served two decades in the Army, including as an instructor at Fort Belvoir in Virginia. The helmet on the top left is one Mr. Roth used while assigned to the 12th Aviation Battalion.",
+"credit": "Kenny Holston/The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/11/28/us/politics/dc-army-700-02/dc-army-700-02-articleLarge.jpg",
+"height": 900,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/11/28/us/politics/dc-army-700-02/dc-army-700-02-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Washington",
+"print_page": "1",
+"print_section": "A",
+"pub_date": "2025-12-19T10:00:26Z",
+"section_name": "U.S.",
+"snippet": "An aged helicopter fleet and inexperienced pilots from nearby Fort Belvoir had raised “widespread concern” among local pilots before a midair collision killed 67 people.",
+"source": "The New York Times",
+"subsection_name": "Politics",
+"type_of_material": "News",
+"uri": "nyt://article/9db22998-c6f9-5e80-af39-26dcf59a42fa",
+"web_url": "https://www.nytimes.com/2025/12/19/us/politics/army-washington-dc-airspace-helicopter-crash.html",
+"word_count": 2993
+},
+{
+"abstract": "The shooting in Stockton, a city in California’s Central Valley, left 11 others wounded. The authorities said they were looking for a suspect.",
+"byline": {
+"original": "By Yan Zhuang and Sonia A. Rao"
+},
+"document_type": "article",
+"headline": {
+"main": "4 Dead, Including 3 Children, After Shooting at Birthday Party in California",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/a65775a5-0216-585f-a39c-53d99adddfbd",
+"keywords": [
+{
+"name": "Location",
+"value": "Stockton (Calif)",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Mass Shootings",
+"rank": 2
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 3
+},
+{
+"name": "Location",
+"value": "San Joaquin County (Calif)",
+"rank": 4
+},
+{
+"name": "Subject",
+"value": "Parties (Social)",
+"rank": 5
+}
+],
+"multimedia": {
+"caption": "Law enforcement officers at the scene of a shooting in Stockton, Calif., on Saturday night.",
+"credit": "Ethan Swope/Associated Press",
+"default": {
+"url": "https://static01.nyt.com/images/2025/12/29/multimedia/29xp-shooting-tjbh/29xp-shooting-tjbh-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/12/29/multimedia/29xp-shooting-tjbh/29xp-shooting-tjbh-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-11-30T04:55:16Z",
+"section_name": "U.S.",
+"snippet": "The shooting in Stockton, a city in California’s Central Valley, left 11 others wounded. The authorities said they were looking for a suspect.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/a65775a5-0216-585f-a39c-53d99adddfbd",
+"web_url": "https://www.nytimes.com/2025/11/29/us/shooting-stockton-california.html",
+"word_count": 299
+},
+{
+"abstract": "Deputies responded to a report of an active shooter at the Division of Motor Vehicles office in Wilmington, Del., the authorities said. The gunman has also died, officials said.",
+"byline": {
+"original": "By Johnny Diaz"
+},
+"document_type": "article",
+"headline": {
+"main": "Trooper Killed at Motor Vehicle Office in Delaware",
+"kicker": "",
+"print_headline": ""
+},
+"_id": "nyt://article/3fd1ad11-eaf4-50cd-a546-84186c507edc",
+"keywords": [
+{
+"name": "Subject",
+"value": "Attacks on Police",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Murders, Attempted Murders and Homicides",
+"rank": 2
+},
+{
+"name": "Location",
+"value": "Wilmington (Del)",
+"rank": 3
+}
+],
+"multimedia": {
+"caption": "Local news reports showed a heavy police presence on Tuesday after a shooting at a Division of Motor Vehicles office in Wilmington, Del. ",
+"credit": "abc7ny",
+"default": {
+"url": "https://static01.nyt.com/images/2025/12/23/us/23xp-dmv/23xp-dmv-articleLarge.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/12/23/us/23xp-dmv/23xp-dmv-thumbStandard.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "Express",
+"print_page": "",
+"print_section": "",
+"pub_date": "2025-12-23T22:01:48Z",
+"section_name": "U.S.",
+"snippet": "Deputies responded to a report of an active shooter at the Division of Motor Vehicles office in Wilmington, Del., the authorities said. The gunman has also died, officials said.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/3fd1ad11-eaf4-50cd-a546-84186c507edc",
+"web_url": "https://www.nytimes.com/2025/12/23/us/delaware-dmv-shooting-trooper-dead.html",
+"word_count": 355
+},
+{
+"abstract": "The shooting in Leland, Miss., which killed six people, was the deadliest of three across the state over the weekend.",
+"byline": {
+"original": "By Patricia Mazzei"
+},
+"document_type": "article",
+"headline": {
+"main": "4 People Arrested in Deadly Mississippi Shooting",
+"kicker": "",
+"print_headline": "4 Are Arrested After Shooting In Mississippi"
+},
+"_id": "nyt://article/d0586c79-bc30-5f81-afb7-595e750b126b",
+"keywords": [
+{
+"name": "Location",
+"value": "Leland (Miss)",
+"rank": 1
+},
+{
+"name": "Subject",
+"value": "Mass Shootings",
+"rank": 2
+}
+],
+"multimedia": {
+"caption": "The shooting took place around midnight on Friday in Leland, a town in the Mississippi Delta with fewer than 4,000 people, as a large crowd celebrated homecoming weekend.",
+"credit": "Brad Vest for The New York Times",
+"default": {
+"url": "https://static01.nyt.com/images/2025/10/11/multimedia/13nat-miss-arrests/13nat-miss-arrests-articleLarge-v2.jpg",
+"height": 400,
+"width": 600
+},
+"thumbnail": {
+"url": "https://static01.nyt.com/images/2025/10/11/multimedia/13nat-miss-arrests/13nat-miss-arrests-thumbStandard-v2.jpg",
+"height": 75,
+"width": 75
+}
+},
+"news_desk": "National",
+"print_page": "17",
+"print_section": "A",
+"pub_date": "2025-10-14T01:39:06Z",
+"section_name": "U.S.",
+"snippet": "The shooting in Leland, Miss., which killed six people, was the deadliest of three across the state over the weekend.",
+"source": "The New York Times",
+"subsection_name": "",
+"type_of_material": "News",
+"uri": "nyt://article/d0586c79-bc30-5f81-afb7-595e750b126b",
+"web_url": "https://www.nytimes.com/2025/10/13/us/mississippi-shooting-arrests.html",
+"word_count": 327
 }
 ]
