@@ -63,8 +63,7 @@ HIGH_PROFILE_ARTICLE_THRESHOLD = 5
 # Agent 3 RAG only includes URLs Agent 1 already marked relevant=true (see retrieve_context allowed_urls).
 RAG_MIN_SIMILARITY = 0.35
 # NYT pub date must fall in [incident date, incident + N days] for GVA match (Agent 1 + RAG).
-# 120 days catches more follow-up / trial coverage than 90 while staying bounded.
-GVA_ARTICLE_MATCH_WINDOW_DAYS = 120
+GVA_ARTICLE_MATCH_WINDOW_DAYS = 90
 _openai_client: Any = None
 total_tokens_used: Dict[str, int] = {"prompt": 0, "completion": 0}
 
@@ -385,62 +384,6 @@ def _victims_from_gva_row(row: Any) -> int:
     return 0
 
 
-def _nyt_article_match_blob(article: Dict[str, Any]) -> Tuple[str, str]:
-    """
-    Text used to match GVA city ↔ NYT article. Includes lead + keyword values so we do not
-    miss pieces that only appear outside headline/abstract/snippet (aligned with HW1 intent).
-    """
-    h = (article.get("headline") or {}).get("main", "") or ""
-    ab = article.get("abstract", "") or ""
-    sn = article.get("snippet", "") or ""
-    lead = article.get("lead_paragraph", "") or ""
-    kw_parts: List[str] = []
-    kws = article.get("keywords")
-    if isinstance(kws, list):
-        for item in kws:
-            if isinstance(item, dict) and item.get("value"):
-                kw_parts.append(str(item.get("value", "")))
-    kw_text = " ".join(kw_parts)
-    full = f"{h} {ab} {sn} {lead} {kw_text}".strip()
-    return full, full.lower()
-
-
-def _gva_city_matches_nyt_text(
-    city: str,
-    state_abbr: str,
-    match_full: str,
-    match_lower: str,
-) -> bool:
-    """
-    True if the GVA city is mentioned in the article text. Uses HW1's word-boundary regex
-    when available, plus substring fallback and a few common headline shortenings.
-    """
-    h1 = homework1_dir()
-    if h1 not in sys.path:
-        sys.path.insert(0, h1)
-    try:
-        from HW1_state_analysis import _city_phrase_pattern
-    except Exception:
-        _city_phrase_pattern = None  # type: ignore
-
-    city_low = city.lower().strip()
-    city_short = city_low.replace(" county", "").strip()
-
-    if _city_phrase_pattern is not None:
-        pat = _city_phrase_pattern(city)
-        if pat and pat.search(match_full):
-            return True
-        # e.g. "Las Vegas" in GVA vs "Vegas" in a headline
-        if "las vegas" in city_low and state_abbr == "NV":
-            pv = _city_phrase_pattern("Vegas")
-            if pv and pv.search(match_full):
-                return True
-
-    if city_low in match_lower or city_short in match_lower:
-        return True
-    return False
-
-
 def _parse_article_pub_date(raw: Any) -> Optional[datetime]:
     if not raw:
         return None
@@ -497,7 +440,6 @@ def _build_gva_events_and_candidates(
         pub_dt = _parse_article_pub_date(article.get("pub_date"))
         if pub_dt is None:
             continue
-        match_full, match_lower = _nyt_article_match_blob(article)
         parsed_articles.append(
             {
                 "pub_date": pub_dt,
@@ -505,8 +447,6 @@ def _build_gva_events_and_candidates(
                 "headline": (article.get("headline") or {}).get("main", "") or "",
                 "abstract": article.get("abstract", "") or "",
                 "snippet": article.get("snippet", "") or "",
-                "match_full": match_full,
-                "match_lower": match_lower,
             }
         )
     print(f"NYT cache articles parsed: {len(parsed_articles)}", flush=True)
@@ -537,9 +477,10 @@ def _build_gva_events_and_candidates(
             "injured": injured,
         }
 
+        city_low = city.lower().strip()
+        city_short = city_low.replace(" county", "").strip()
         matched_urls: List[str] = []
         matched_dates: List[datetime] = []
-        seen_event_url: Set[str] = set()
 
         for article in parsed_articles:
             pub_dt = article["pub_date"]
@@ -548,17 +489,14 @@ def _build_gva_events_and_candidates(
             if pub_dt.date() > (incident_date + timedelta(days=GVA_ARTICLE_MATCH_WINDOW_DAYS)):
                 continue
 
-            mf = article.get("match_full") or ""
-            ml = article.get("match_lower") or ""
-            if not _gva_city_matches_nyt_text(city, state, mf, ml):
+            text = f"{article['headline']} {article['abstract']} {article['snippet']}".lower()
+            if city_low not in text and city_short not in text:
                 continue
 
             art_url = article.get("url") or ""
             if art_url:
-                if art_url not in seen_event_url:
-                    seen_event_url.add(art_url)
-                    matched_urls.append(art_url)
-                    matched_dates.append(pub_dt)
+                matched_urls.append(art_url)
+                matched_dates.append(pub_dt)
                 if (
                     max_articles > 0
                     and not reached_cap
