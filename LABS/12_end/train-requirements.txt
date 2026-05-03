@@ -1,0 +1,4 @@
+# Lab 12 model training (GitHub Actions + local)
+numpy>=1.24,<3
+pandas>=2.0,<3
+xgboost>=2.0,<4

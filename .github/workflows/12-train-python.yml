@@ -2,11 +2,12 @@ name: Model Training Job (Python)
 
 on:
   schedule:
-    - cron: '0 7 * * 1'   # weekly on Mondays at 7am UTC
-  workflow_dispatch:        # allow manual trigger
+    - cron: '0 7 * * 1' # weekly on Mondays at 7am UTC
+  workflow_dispatch:
 
 concurrency:
-  group: dsai-main-writers
+  # Same group as 12-ingest-*.yml so pushes to main never race.
+  group: sysen5381-ingest-db-writer
   cancel-in-progress: false
 
 permissions:
@@ -16,12 +17,12 @@ jobs:
   train_python:
     runs-on: ubuntu-latest
     steps:
-      - name: CHECKOUT REPOSITORY
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ github.token }}
 
-      - name: CHECK FILE SIZE LIMITS
+      - name: Check file size limits
         run: |
           set -euo pipefail
           check_size_mb() {
@@ -39,39 +40,36 @@ jobs:
               echo "File not found yet (skip): $FILE"
             fi
           }
-          check_size_mb "12_end/data/modelpy.json" 95
-          check_size_mb "12_end/data/validationpy.json" 95
+          check_size_mb "LABS/12_end/data/modelpy.json" 95
+          check_size_mb "LABS/12_end/data/validationpy.json" 95
 
-      - name: SETUP PYTHON
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: pip
+          cache-dependency-path: LABS/12_end/train-requirements.txt
 
-      - name: CACHE PIP PACKAGES
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-train-${{ hashFiles('.github/workflows/12-train-python.yml', '12_end/02_train_model.py') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-train-
-            ${{ runner.os }}-pip-
+      - name: Install dependencies
+        run: pip install -r LABS/12_end/train-requirements.txt
 
-      - name: INSTALL DEPENDENCIES
-        run: pip install pandas xgboost numpy
-
-      - name: RUN TRAINING SCRIPT
-        working-directory: 12_end
+      - name: Run training script
+        working-directory: LABS/12_end
         run: python 02_train_model.py
 
-      - name: COMMIT CHANGES
+      - name: Commit changes
+        env:
+          GIT_BRANCH: ${{ github.ref_name }}
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add 12_end/data/modelpy.json 12_end/data/validationpy.json
+          git add LABS/12_end/data/modelpy.json LABS/12_end/data/validationpy.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
-          else
-            git commit -m "chore: train python model $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            exit 0
           fi
+          TS="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git commit -m "chore(lab12): train python model (${TS})"
+          git pull --rebase origin "${GIT_BRANCH}"
+          git push origin "HEAD:${GIT_BRANCH}"
