@@ -68,3 +68,4 @@ jobs:
             git commit -m "chore(lab12): ingest traffic.db (r, $(date -u +%Y-%m-%dT%H:%M:%SZ))"
             git pull --rebase origin "${{ github.ref_name }}"
             git push origin "HEAD:${{ github.ref_name }}"
+          fi
