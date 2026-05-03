@@ -1,0 +1,2 @@
+# Lab 12 Brussels traffic ingest — Python deps only (pandas not used by 01_ingest_traffic.py)
+requests>=2.28,<3

@@ -1,0 +1,61 @@
+rules:
+  relevance_validation:
+  - id: "relevance-validation-json"
+    name: "Relevance Validation Rules"
+    description: "Determines whether a news article actually covers a specific mass shooting event (city and date)."
+    applies_when: "Always"
+    guidance: |
+      # Relevance Validation Guidelines
+
+      Your only task is to decide if the given article actually covers the specific shooting event (city and date) that it was matched to.
+
+      **1. Criteria (be inclusive; when in doubt, mark relevant=true):**
+      - Same incident: the article should be about a shooting in the same geographic area as the matched event. The headline/abstract may use the region (e.g. "Central Ohio", "Columbus area") instead of the exact city name (e.g. "New Albany")—that still matches, since the event is in that area.
+      - Only reject when the article is clearly not about a shooting in the same geographic area, or is only loosely related (e.g. generic policy, no specific incident).
+      - Prefer including borderline cases so we do not filter out genuine coverage.
+
+      **2. Output Format:**
+      - Respond with only a single JSON object. Do not include any other text, explanation, or markdown code fences.
+      - Use this exact format: {"relevant": true} or {"relevant": false}
+      - Include a one-sentence reason: {"relevant": true, "reason": "..."} or {"relevant": false, "reason": "..."}
+      - Valid keys are "relevant" (boolean) and "reason" (string).
+
+  coverage_analysis:
+  - id: "coverage-analysis-table"
+    name: "Coverage Analysis Rules"
+    description: "Analyzes NYT coverage patterns, gaps, and differences between two states."
+    applies_when: "Always"
+    guidance: |
+      # Coverage Analysis Guidelines
+
+      Analyze the validated article list and coverage statistics for Ohio and Louisiana.
+
+      **1. Output Format:**
+      - Start with a well-formatted markdown table. Include columns such as: State, Total shootings, Covered by NYT, Pct covered, Coverage (e.g., mean/median days).
+      - Use the exact stats provided (total_shootings, reported_count, pct_reported, coverage_mean_days, coverage_median_days).
+      - After the table, provide 3 to 5 bullet-point findings.
+
+      **2. Content:**
+      - Compare coverage patterns between the two states.
+      - Note gaps (events with no coverage) and any disparities.
+      - Use clear, professional language. Do not invent numbers; use only the data given.
+
+  report_writing:
+  - id: "report-writing-press-release"
+    name: "Press Release Report Writing Standards"
+    description: "Writes a professional press-release-style report from the analyst's table and findings."
+    applies_when: "Always"
+    guidance: |
+      # Press Release Report Guidelines
+
+      Write a 300-400 word press-release-style report based on the coverage analysis provided. No tables or markdown code fences.
+
+      **1. Structure:**
+      - Headline: one line, compelling, max ~80 characters.
+      - Lead paragraph: who, what, when, where, why (NYT coverage of mass shootings in Ohio vs Louisiana).
+      - Findings section: summarize the analyst's bullet points and table (cite specific numbers).
+      - Recommendations or implications: 1-2 short paragraphs.
+
+      **2. Tone & Style:**
+      - Professional and newsworthy. Use active voice. Cite the analysis; do not add unverified claims.
+      - Keep paragraphs short (2-3 sentences). Target 300-400 words total.

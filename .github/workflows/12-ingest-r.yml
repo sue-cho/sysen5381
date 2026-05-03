@@ -1,0 +1,70 @@
+name: Traffic Data Ingestion (R)
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: sysen5381-ingest-db-writer
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  ingest_r:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ github.token }}
+
+      - name: Check file size limits
+        env:
+          DB_FILE: LABS/12_end/data/traffic.db
+          MAX_MB: 95
+        run: |
+          set -euo pipefail
+          if [ -f "$DB_FILE" ]; then
+            SIZE_BYTES=$(wc -c < "$DB_FILE")
+            SIZE_MB=$((SIZE_BYTES / 1024 / 1024))
+            echo "File: $DB_FILE | Size: ${SIZE_MB} MB | Limit: ${MAX_MB} MB"
+            if [ "$SIZE_BYTES" -gt $((MAX_MB * 1024 * 1024)) ]; then
+              echo "ERROR: $DB_FILE exceeds ${MAX_MB} MB. Stop run before ingest."
+              exit 1
+            fi
+          else
+            echo "File not found yet (skip): $DB_FILE"
+          fi
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: release
+          use-public-rspm: true
+
+      - name: Restore R dependency cache (install if needed)
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          working-directory: LABS/12_end
+          cache-version: 1
+
+      - name: Run ingestion job
+        working-directory: LABS/12_end
+        run: Rscript 01_ingest_traffic.R
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add LABS/12_end/data/traffic.db
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(lab12): ingest traffic.db (r, $(date -u +%Y-%m-%dT%H:%M:%SZ))"
+            git pull --rebase origin "${{ github.ref_name }}"
+            git push origin "HEAD:${{ github.ref_name }}"

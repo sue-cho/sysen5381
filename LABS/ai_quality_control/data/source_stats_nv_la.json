@@ -1,0 +1,41 @@
+{
+  "states": {
+    "state_a": "NV",
+    "state_b": "LA"
+  },
+  "stats_markdown": "PRECOMPUTED_2_STATE_STATS (do not recalculate)\n\n| Metric | NV | LA |\n|--------|-----------|-----------|\n| Total Shootings | 3 | 16 |\n| NYT Covered | 3 | 1 |\n| Coverage Rate | 100.00% | 6.25% |\n| Avg Days to First Article | 22.7 | 0.0 |\n| Same-Day Coverage | 33.3% | 100.0% |\n| Median Household Income | $75,561 | $60,023 |\n| % White Population | 53.18% | 57.97% |\n| State Population | 3,141,000 | 4,621,025 |\n\nCorrelation flag: positive: higher income state also has higher coverage rate\nCoverage rate difference: NV minus LA = 93.75 percentage points.\nIncome difference: NV minus LA = 15,538 dollars.\nHuman interpretation: NV has 93.75 more shootings covered per 100 events than LA.\nCoverage speed: LA covered shootings 22.7 days faster on average\nWithin-state note: NV coverage rate is 100.00%; LA coverage rate is 6.25%.\n\nOUTLIER_EVENTS (high-profile: 5+ matched NYT articles per GVA incident):\n- New Orleans, LA, 2025-01-01: 40 articles\n",
+  "structured": {
+    "state_a": {
+      "state": "NV",
+      "total_events": 3,
+      "covered_events": 3,
+      "coverage_rate_pct": 100.0,
+      "avg_days_to_first_article": 22.666666666666668,
+      "same_day_coverage_pct": 33.33333333333333,
+      "demographics": {
+        "state": "NV",
+        "median_household_income": 75561.0,
+        "population": 3141000,
+        "pct_white": 53.17739573384272,
+        "acs_dataset": "acs5",
+        "acs_year": 2023
+      }
+    },
+    "state_b": {
+      "state": "LA",
+      "total_events": 16,
+      "covered_events": 1,
+      "coverage_rate_pct": 6.25,
+      "avg_days_to_first_article": 0,
+      "same_day_coverage_pct": 100.0,
+      "demographics": {
+        "state": "LA",
+        "median_household_income": 60023.0,
+        "population": 4621025,
+        "pct_white": 57.97289562380641,
+        "acs_dataset": "acs5",
+        "acs_year": 2023
+      }
+    }
+  }
+}

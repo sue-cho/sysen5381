@@ -8,7 +8,7 @@ Uses hardcoded test data and makes network calls to:
 - Census API for ACS5 demographics lookups (Agent 2 tool)
 
 Install:
-  pip install requests pandas pyyaml beautifulsoup4 openai
+  pip install requests pandas pyyaml openai
 
 Run:
   export OPENAI_API_KEY='your-key-here'
@@ -34,7 +34,6 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 import pandas as pd
 import requests
 import yaml
-from bs4 import BeautifulSoup  # noqa: F401  (installed dependency; not required for current pipeline)
 
 
 # 0. IMPORTS AND SETUP
@@ -249,7 +248,11 @@ def req_perform(
 
 
 def req_perform_openai(
-    content: str, prompt: str, model: str = OPENAI_MODEL, total_tokens_used: Optional[Dict[str, int]] = None
+    content: str,
+    prompt: str,
+    model: str = OPENAI_MODEL,
+    total_tokens_used: Optional[Dict[str, int]] = None,
+    temperature: float = 0.3,
 ) -> str:
     """
     Single OpenAI API call matching the structure you requested.
@@ -263,6 +266,7 @@ def req_perform_openai(
             {"role": "user", "content": content},
         ],
         max_tokens=1000,
+        temperature=temperature,
     )
 
     if total_tokens_used is not None and response.usage:
@@ -270,6 +274,34 @@ def req_perform_openai(
         total_tokens_used["completion"] += int(response.usage.completion_tokens or 0)
 
     return response.choices[0].message.content
+
+
+def req_perform_ollama_cloud(
+    messages: List[Dict[str, str]],
+    model: str,
+    temperature: float = 0.3,
+) -> str:
+    """
+    Ollama Cloud chat API. Requires OLLAMA_API_KEY in the environment.
+    """
+    api_key = os.getenv("OLLAMA_API_KEY")
+    if not api_key:
+        raise ValueError("OLLAMA_API_KEY not set (required for Ollama Cloud).")
+    url = "https://api.ollama.com/api/chat"
+    body = {
+        "model": model,
+        "messages": messages,
+        "stream": False,
+        "temperature": temperature,
+    }
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+    }
+    r = requests.post(url, json=body, headers=headers, timeout=300)
+    r.raise_for_status()
+    data = r.json()
+    return str(data.get("message", {}).get("content", "") or "").strip()
 
 
 _state_census_cache: Dict[str, Optional[Dict[str, Any]]] = {}
@@ -938,6 +970,9 @@ def agent3_format_bullets(
     stats_markdown: str,
     total_tokens_used: Dict[str, int],
     rag_context: str = "",
+    llm_backend: str = "openai",
+    temperature: float = 0.3,
+    ollama_model: Optional[str] = None,
 ) -> str:
     """
     Formatter-only: Agent 3 outputs 3–5 bullet points only.
@@ -969,9 +1004,26 @@ def agent3_format_bullets(
             "PRECOMPUTED_STATS_INPUT:\n"
             f"{stats_markdown}"
         )
-    raw_out = req_perform_openai(
-        content=user_content, prompt=system_prompt, model=OPENAI_MODEL, total_tokens_used=total_tokens_used
-    )
+
+    if llm_backend == "openai":
+        raw_out = req_perform_openai(
+            content=user_content,
+            prompt=system_prompt,
+            model=OPENAI_MODEL,
+            total_tokens_used=total_tokens_used,
+            temperature=temperature,
+        )
+    elif llm_backend == "ollama":
+        om = ollama_model or os.getenv("OLLAMA_CLOUD_MODEL", "").strip()
+        if not om:
+            raise ValueError("Ollama Cloud model not set: pass ollama_model= or set OLLAMA_CLOUD_MODEL.")
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_content},
+        ]
+        raw_out = req_perform_ollama_cloud(messages, model=om, temperature=temperature)
+    else:
+        raise ValueError("llm_backend must be 'openai' or 'ollama'.")
 
     # Accept as plain text; if it accidentally includes JSON, try extracting bullets.
     # We keep defensive parsing minimal since bullets are human-readable.
@@ -983,6 +1035,9 @@ def agent4_write_report(
     stats_markdown: str,
     agent3_bullets: str,
     total_tokens_used: Dict[str, int],
+    llm_backend: str = "openai",
+    temperature: float = 0.3,
+    ollama_model: Optional[str] = None,
 ) -> str:
     system_prompt = format_rules_for_prompt(RULES.get("rules", {}).get("report_writing"))
     system_prompt += "\n\nUse only the provided numbers and statements from the stats block."
@@ -994,9 +1049,25 @@ def agent4_write_report(
         f"{agent3_bullets}\n"
     )
 
-    raw_out = req_perform_openai(
-        content=user_content, prompt=system_prompt, model=OPENAI_MODEL, total_tokens_used=total_tokens_used
-    )
+    if llm_backend == "openai":
+        raw_out = req_perform_openai(
+            content=user_content,
+            prompt=system_prompt,
+            model=OPENAI_MODEL,
+            total_tokens_used=total_tokens_used,
+            temperature=temperature,
+        )
+    elif llm_backend == "ollama":
+        om = ollama_model or os.getenv("OLLAMA_CLOUD_MODEL", "").strip()
+        if not om:
+            raise ValueError("Ollama Cloud model not set: pass ollama_model= or set OLLAMA_CLOUD_MODEL.")
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_content},
+        ]
+        raw_out = req_perform_ollama_cloud(messages, model=om, temperature=temperature)
+    else:
+        raise ValueError("llm_backend must be 'openai' or 'ollama'.")
     return str(raw_out).strip()
 
 

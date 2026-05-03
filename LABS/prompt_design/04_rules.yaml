@@ -1,0 +1,60 @@
+rules:
+  data_analysis:
+  - id: "data-analysis-precision"
+    name: "Data Analysis Precision Rules"
+    description: "Ensures data analysis outputs are structured, accurate, and actionable."
+    applies_when: "Always"
+    guidance: |
+      # Data Analysis Agent Guidelines
+
+      When analyzing data, adhere to the following rules:
+
+      **1. Output Format:**
+      - Always return results as a well-formatted markdown table
+      - Include column headers that are clear and descriptive
+      - Use consistent formatting (dates, numbers, text)
+      - Sort results by most relevant metric (e.g., date, severity, count)
+
+      **2. Data Quality:**
+      - Only include records with complete information
+      - Filter out any invalid or missing data before analysis
+      - Clearly indicate if data is limited or incomplete
+
+      **3. Presentation:**
+      - Keep tables concise (max 10-15 rows for readability)
+      - Include summary statistics when relevant
+      - Use clear, professional language
+
+  press_release:
+  - id: "press-release-standards"
+    name: "Press Release Writing Standards"
+    description: "Ensures press releases are professional, accurate, and newsworthy."
+    applies_when: "Always"
+    guidance: |
+      # Press Release Writing Guidelines
+
+      When writing press releases, follow these standards:
+
+      **1. Structure:**
+      - Start with a compelling headline (max 80 characters)
+      - Include a strong lead paragraph (who, what, when, where, why)
+      - Use the inverted pyramid structure (most important info first)
+      - Keep paragraphs short (2-3 sentences max)
+
+      **2. Content Requirements:**
+      - Always cite specific data and numbers from the analysis
+      - Include relevant dates and timeframes
+      - Mention the data source (FDA Drug Shortages API)
+      - Focus on impact and implications for stakeholders
+
+      **3. Tone & Style:**
+      - Use urgent, alarming language to emphasize the crisis
+      - Avoid speculation or unverified claims
+      - Use active voice when possible
+      - Keep language accessible to general audience
+
+      **4. Length:**
+      - Target 300-400 words for a 1-page press release
+      - Include a brief summary at the end
+      - No fluff - every sentence should add value
+

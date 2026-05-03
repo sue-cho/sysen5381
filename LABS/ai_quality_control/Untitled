@@ -1,0 +1,3 @@
+source /Users/User/opt/anaconda3/etc/profile.d/conda.sh
+conda activate dsai-py311
+python --version

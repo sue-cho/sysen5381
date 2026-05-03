@@ -1,5 +1,7 @@
 faicons
 markdown
+openai
+pyyaml
 shiny
 shinywidgets
 plotly

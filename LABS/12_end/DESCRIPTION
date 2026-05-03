@@ -1,0 +1,15 @@
+Package: lab12ingest
+Title: Lab 12 ingest — dependency shim for CI
+Version: 0.0.0
+Authors@R: person(given="Maintainer", family="Pkg", role = "ctb")
+Description: Declares Imports for scripts in this folder only; GitHub Actions uses setup-r-dependencies to cache installs.
+Depends: R (>= 4.2.0)
+Imports:
+    DBI,
+    RSQLite,
+    dplyr,
+    httr2,
+    lubridate,
+    purrr,
+    tibble
+License: CC0

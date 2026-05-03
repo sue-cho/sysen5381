@@ -1,0 +1,6 @@
+county,state,year,pollutant,metric,type,label_value,label_percent
+White County,IL,2015,PM10,Time Driven,Light Truck,2.7 M,51.8%
+White County,IL,2015,PM10,Time Driven,Car/ Bike,1.9 M,36.1%
+White County,IL,2015,PM10,Time Driven,Combo Truck,381.3 k,7.3%
+White County,IL,2015,PM10,Time Driven,Heavy Truck,220.7 k,4.2%
+White County,IL,2015,PM10,Time Driven,Bus,30.6 k,0.6%

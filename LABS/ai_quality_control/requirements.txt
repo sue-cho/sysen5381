@@ -1,0 +1,6 @@
+# Lab: generate_reports_nv_la.py + ai_quality_control.py (uses HW2_multi_agent)
+openai>=1.0
+pandas>=2.0
+python-dotenv>=1.0
+requests>=2.31
+pyyaml>=6.0
